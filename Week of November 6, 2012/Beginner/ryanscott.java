@@ -25,6 +25,8 @@ public class NumberCharCombos {
 	public static void decode(String decoded, String tail) {
 		if(tail.equals("")) { //The string is already decoded
 			System.out.println(decoded);
+		} else if(tail.charAt(0) == '0') { //The number 0 doesn't represent a letter, so...
+			decode(decoded, tail.substring(1)); //...ignore it.
 		} else if(tail.length() == 1) { //Simply asciify the tail, output the results, and we are done
 			System.out.println(decoded + asciify(tail));
 		} else {
