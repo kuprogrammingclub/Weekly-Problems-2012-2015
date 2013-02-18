@@ -9,10 +9,8 @@ def is_num_in_base_n(num, base_n):
 
 def to_base_10(num, num_base):
     num_base_10 = 0
-    power = len(num) - 1
-    for digit in num:
+    for digit, power in zip(num, range(len(num) - 1, -1, -1)):
         num_base_10 += BASE64.index(digit) * (num_base**power)
-        power -= 1
     return num_base_10
 
 def base_10_to_base_n(num_base_10, base_n):
@@ -20,7 +18,7 @@ def base_10_to_base_n(num_base_10, base_n):
     num_base_n = ''
     while cur_num > 0:
         num_base_n = BASE64[cur_num % base_n] + num_base_n
-        cur_num = cur_num // base_n
+        cur_num //= base_n
     return num_base_n
 
 if __name__ == "__main__":
@@ -33,7 +31,7 @@ if __name__ == "__main__":
             if b == base:
                 print('Base', str(b)+':', num)
             elif b == 10:
-                print('Base', str(b)+':' ,num_base_10)
+                print('Base', str(b)+':', num_base_10)
             else:
                 print('Base', str(b)+':', base_10_to_base_n(num_base_10, b))
         print(time.time() - start_time, "seconds to complete!")
