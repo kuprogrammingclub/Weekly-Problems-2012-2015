@@ -2,10 +2,8 @@
 ##Beginner
 (From <a href="http://www.reddit.com/r/dailyprogrammer/comments/zx8vw/9152012_challenge_98_easy_arithmetic_tables/">/r/dailyprogrammer</a>) Write a program that reads two arguments from the command line:
 
-<ul>
-a symbol, +, -, *, or /
-a natural number n (≥ 0)
-</ul>
+* a symbol, +, -, *, or /
+* a natural number n (≥ 0)
 
 And uses them to output a nice table for the operation from 0 to n, like this (for "+ 4"):
 
