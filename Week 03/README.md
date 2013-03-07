@@ -1,6 +1,6 @@
 #Week 3
 ##Beginner
-(From <a href="http://www.reddit.com/r/dailyprogrammer/comments/122c4t/10252012_challenge_107_easy_all_possible_decodings/">/r/dailyprogrammer</a>) Consider the translation from letters to numbers <pre>a -> 1</pre> through <pre>z -> 26</pre>. Every sequence of letters can be translated into a string of numbers this way, with the numbers being mushed together. For instance <pre>hello -> 85121215</pre>. Unfortunately the reverse translation is not unique. <pre>85121215</pre> could map to <pre>hello</pre>, but also to <pre>heaubo</pre> Write a program that, given a string of digits, outputs every possible translation back to letters.
+(From <a href="http://www.reddit.com/r/dailyprogrammer/comments/122c4t/10252012_challenge_107_easy_all_possible_decodings/">/r/dailyprogrammer</a>) Consider the translation from letters to numbers <tt>a -> 1</tt> through <tt>z -> 26</tt>. Every sequence of letters can be translated into a string of numbers this way, with the numbers being mushed together. For instance <tt>hello -> 85121215</tt>. Unfortunately the reverse translation is not unique. <tt>85121215</tt> could map to <tt>hello</tt>, but also to <tt>heaubo</tt> Write a program that, given a string of digits, outputs every possible translation back to letters.
 
 Sample input:
 
