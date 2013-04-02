@@ -1,0 +1,18 @@
+6 5 3
+WWWWWW
+WS  #W
+WWWWWW
+WX  #W
+WWWWWW
+
+WWWWWW
+W   #W
+W W WW
+W   #W
+WWWWWW
+
+WWWWWW
+W   #W
+WWWW W
+W   #W
+WWWWWW
