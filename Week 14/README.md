@@ -1,4 +1,4 @@
-#Week 12
+#Week 14
 ##Beginner
 Beginner (from http://www.pythonchallenge.com/): Take the following mess and try to decipher the hidden message. Yes, there are actual letters hidden in here, so get your sleuth on.
 
@@ -20,4 +20,5 @@ O   O   O   O
 </pre>
 
 Find the least value of <em>n</em> for which p(<em>n</em>) is divisible by one million.
+
 -
