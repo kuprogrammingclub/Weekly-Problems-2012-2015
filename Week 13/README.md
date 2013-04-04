@@ -1,4 +1,4 @@
-#Week 12
+#Week 13
 ##Beginner
 (From <a href="http://www.reddit.com/r/dailyprogrammer/comments/19mn2d/030413_challenge_121_easy_bytelandian_exchange_1/">/r/dailyprogrammer</a>) Bytelandian Currency is made of coins with integers on them. There is a coin for each non-negative integer (including 0). You have access to a peculiar money changing machine. If you insert a N-valued coin, with N positive, It pays back 3 coins of the value N/2,N/3 and N/4, rounded down. For example, if you insert a 19-valued coin, you get three coins worth 9, 6, and 4. If you insert a 2-valued coin, you get three coins worth 1, 0, and 0. <em>0-valued coins cannot be used in this machine.</em>
 
