@@ -13,6 +13,8 @@ Resources
 ACM Comp Prog keeps an expanding list of regional competitive and learning opportunites. See below:
 
 Competitions
+- KU ACM Intramural Programming Competition - A yearly competition conducted mid Spring Semester open to all KU students. Five hours are given to complete a problem set of 10. 
+
 - Consortium for Computing Sciences in Colleges: Central Plains - CCSC:CP holds a yearly regional computer science conference that hosts lectures, presentations, as well as a programming competition. http://www.ccsc.org/centralplains/
 
 - Hack the Midwest - Hackathon hosted in Kansas city. As part of registration, competitors submit an idea for an application they intend to make from scratch within 24 hours. http://www.hackthemidwest.com/
