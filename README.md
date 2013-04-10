@@ -5,7 +5,7 @@ Weekly-Problems
 ---------------
 
 This repository provides a home for all KU ACM Competitive Programming's weekly problems, as well as problem sets from KU ACM competitions and those held by other sponsors. Solutions created by members of ACM Comp Prog may be submitted under the problems folder, e.g.
-/Weekly-Problems/Week 14/Beginner/Aleksander/mySubmission.ext
+/Weekly-Problems/Week 14/Beginner/Member Name/MemberSubmission.ext
 
 Resources
 ---------
