@@ -22,6 +22,6 @@ Competitions
 Programming Practice
 - Python Challenge - A series of programming riddles in which each answer is used as the url to the next problem. http://www.pythonchallenge.com/ 
 
-- Project Euler - Programming challenges for the mathematically inclined. Project Euler is a compiled list programming problems for which mathematical insight is often required for an efficient solution. 
+- Project Euler - Programming challenges for the mathematically inclined. Project Euler is a compiled list programming problems for which mathematical insight is often required for an efficient solution. http://projecteuler.net/ 
 
 Know any other resources you'd like to share? Email us! aleksanderesk@gmail.com
