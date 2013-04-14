@@ -18,7 +18,7 @@ For example, your dialogue may collect
 </pre>
 
 ##Advanced
-In Scrabble, you arrange words on a board and each letter is given a numerical value depended on its frequency of use in the English language. The score a word gets you is dependent on the cumulative sum of individual values ascribed to the letters the word is composed of. The difference between Scrabble and Words with Friends is that when you play Words with Friends, it's too easy to use the cheating app. But now you'll write a program that, given the point value of each word and a string of random text (you may test any string), write a program that determines the highest point value word that can be constructed. You may find it useful to grab a list of English words (on *nix systems, the line
+In Scrabble, you arrange words on a board and each letter is given a numerical value depending on its frequency of use in the English language. The score a word gets you is dependent on the cumulative sum of individual values ascribed to the letters the word is composed of. The difference between Scrabble and Words with Friends is that when you play Words with Friends, it's too easy to use the cheating app. But now you'll write a program that, given the point value of each word and a string of random text (you may test any string), write a program that determines the highest point value word that can be constructed. You may find it useful to grab a list of English words (on *nix systems, the line
 <pre>
 cat /usr/share/dict/words > ~/words.txt
 </pre>
