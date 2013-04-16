@@ -1,0 +1,99 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Problem A: Combination Lock</title>
+    <style type="text/css"><!--
+      html { margin-left: 4em; }
+      h1 { margin-left: -2em; font-size: 14pt; }
+      tt,pre { font-weight: bold; font-size: 12pt; }
+    --></style>
+  </head>
+
+  <body>
+    <h1>Problem A: Combination Lock</h1>
+
+    <img src="lock.jpg" width="325" height="227" align="right" />
+    <br/><b>Source:</b> <tt>lock.{c,cpp,java}</tt>
+    <br/><b>Input:</b> <tt>lock.in</tt>
+    <br/><b>Output:</b> <tt>lock.out</tt>
+
+    <p>The combination lock of this problem, as shown in the figure,
+    consists of a circular dial, which can be turned (clockwise or
+    counterclockwise) and is embedded into the "fixed" part of the
+    lock. The dial has <var>N</var> evenly spaced "ticks". The ticks
+    are numbered from 0 to <var>N</var>-1, increasing in the clockwise
+    direction. The fixed part of the lock has a "mark" which always
+    "points to" a particular tick on the dial.  Of course, the mark
+    points to different ticks as the dial is turned. (In the figure,
+    <var>N</var> = 40 and the mark points to tick 14.)</p>
+
+<p>The lock comes with three code numbers
+<var>T</var><sub>1</sub>,<var>T</var><sub>2</sub>,
+<var>T</var><sub>3</sub>.  These are non-negative integers and each of
+them is less than <var>N</var>.  No two of the three are the
+same.</p>
+
+<p>The lock is opened in three stages of operations: 
+
+<ol> 
+
+<li>If the mark initially points to tick <var>T</var><sub>1</sub>,
+turn the dial exactly two full revolutions clockwise and
+stop. Otherwise, turn the dial clockwise exactly two full revolutions
+clockwise and continue to turn it clockwise until the mark points to
+tick <var>T</var><sub>1</sub>.</li>
+
+<li>Turn the dial one full revolution counterclockwise and continue to
+turn it counterclockwise until the mark points to tick
+<var>T</var><sub>2</sub>.</li>
+
+<li>Turn the dial clockwise until the mark points to tick
+<var>T</var><sub>3</sub>. The lock should now open.</li> </ol>
+</p>
+
+<p>Given the numbers <var>N</var>, <var>T</var><sub>1</sub>,
+    <var>T</var><sub>2</sub>, <var>T</var><sub>3</sub>, the goal of
+    this problem is to find the average number of ticks the dial must
+    be turned in order to open the lock. For any particular <var>N</var>,
+    <var>T</var><sub>1</sub>, <var>T</var><sub>2</sub>,
+    <var>T</var><sub>3</sub> and a particular initial configuration of
+    the lock, the number of ticks turned is defined to be the sum of
+    the ticks turned in the three stages outlined above.</p>
+
+
+    <h1>Input</h1>
+
+<p>The input file consists of a number of test cases, one test case
+per line. Each line of the input file contains four integers:
+<var>N</var>, <var>T</var><sub>1</sub>, <var>T</var><sub>2</sub>,
+<var>T</var><sub>3</sub>, in this order, separated by blank
+spaces. The integer <var>N</var> is a multiple of 5, 25 &lt;=
+<var>N</var> &lt;= 100. The numbers <var>T</var><sub>1</sub>,
+<var>T</var><sub>2</sub> and <var>T</var><sub>3</sub> satisfy the
+constraints stated under the description above. The input will
+be terminated by a line containing only four zeroes, separated by blank
+spaces.</p>
+
+    <h1>Output</h1>
+
+<p>For each test case, print the average number of ticks (rounded to
+three decimal places) the dial must be turned in order to open the
+lock.  Assume that each of the <var>N</var> possible initial configurations of
+the lock is equally likely.
+</p>
+
+    <h1>Sample Input</h1>
+<pre>
+80 20 40 50
+80 10 79 12
+0 0 0 0
+</pre>
+
+    <h1>Sample Output</h1>
+<pre>
+369.500
+415.500
+</pre>
+  </body>
+</html>
