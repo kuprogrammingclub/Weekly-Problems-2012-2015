@@ -28,4 +28,7 @@ Programming Practice
 
 - Project Euler - Programming challenges for the mathematically inclined. Project Euler is a compiled list programming problems for which mathematical insight is often required for an efficient solution. http://projecteuler.net/ 
 
+Algorithms
+- Path Finding Algorithms - A visual representation of numerous path finding algorithms implemented in JavaScript. http://qiao.github.io/PathFinding.js/visual/ Source code available here https://github.com/qiao/PathFinding.js
+
 Know any other resources you'd like to share? Email us! aleksanderesk@gmail.com
