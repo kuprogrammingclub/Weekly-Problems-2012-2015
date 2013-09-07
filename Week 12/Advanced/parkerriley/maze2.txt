@@ -1,6 +1,0 @@
-6 5 1
-WWWWWW
- S   W
- WW WW
- X   W
-WWWWWW
