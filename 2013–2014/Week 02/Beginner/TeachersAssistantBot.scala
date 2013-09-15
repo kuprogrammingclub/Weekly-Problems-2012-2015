@@ -1,5 +1,3 @@
-package com.xnux.sandbox
-
 object TeachersAssistantBot {
 
 	// Because I'm too lazy to create input parsing code
