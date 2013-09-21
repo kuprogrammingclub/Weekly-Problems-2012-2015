@@ -34,7 +34,7 @@ Visit the <a href="http://www.reddit.com/r/dailyprogrammer/comments/1m1jam/08131
 ##Advanced
 (from <a href="http://projecteuler.net/problem=22">Project Euler</a>): If you're not familiar with Project Euler, it is a website dedicated to devising computational problems that are intended to be solved by computers (ideally in a minute or less). Some of the problems require advanced mathematics, but I'll try to avoid them. The cool thing about Project Euler is that each problem has a specific answer, so if you come up with the answer, then submit it to the website for points! (And brag about it at meetings too.) Here is a typical problem:
 
-Using [Advanced/names.txt](names.txt) (a 46K text file containing over five-thousand first names), begin by sorting it into alphabetical order. Then working out the alphabetical value for each name, multiply this value by its alphabetical position in the list to obtain a name score.
+Using [names.txt](Advanced/names.txt) (a 46K text file containing over five-thousand first names), begin by sorting it into alphabetical order. Then working out the alphabetical value for each name, multiply this value by its alphabetical position in the list to obtain a name score.
 
 For example, when the list is sorted into alphabetical order, COLIN, which is worth 3 + 15 + 12 + 9 + 14 = 53, is the 938th name in the list. So, COLIN would obtain a score of 938 × 53 = 49714.
 
