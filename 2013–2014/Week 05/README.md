@@ -1,4 +1,4 @@
-#Week 3
+#Week 5
 ##Beginner
 (adapted from <a href="http://openbookproject.net/pybiblio/practice/wilson/piglatin.php">here</a>): You are going to create a translation machine for a very specific language: <a href="https://en.wikipedia.org/wiki/Pig_Latin">Pig Latin</a>. For example, "Competitive programming" translates to "Ompetitivecay ogrammingpray" in Pig Latin, and "Apples" translates to either "Applesway" or "Applesyay" depending on the dialect of Pig Latin you prefer. Optionally, you can also create a machine that translates from Pig Latin back to English.
 
