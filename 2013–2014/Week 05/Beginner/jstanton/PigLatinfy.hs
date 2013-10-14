@@ -3,6 +3,15 @@
 -}
 
 import Data.Char
+import Data.List
+
+
+main =
+  do 
+  putStr "Enter string to 'PigLatinfy': "
+  str <- getLine
+  let wordsToConvert = words $ map toLower str
+  putStrLn $ intercalate " " $ map convertTo wordsToConvert
 
 vowels = "aeiou"
 
