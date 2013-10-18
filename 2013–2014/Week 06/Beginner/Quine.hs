@@ -1,0 +1,1 @@
+quine = putStrLn $ (\ str -> str ++ show str)"quine = putStrLn $ (\\ str -> str ++ show str)"
