@@ -1,4 +1,4 @@
-#Week 3
+#Week 6
 ##Beginner
 Using any language you choose (as per usual), implement a <a href="http://en.wikipedia.org/wiki/Quine_(computing)">quine</a>, that is, a program that takes no input but outputs its own source code. Bonus cool points for writing programs as concise as possible, or for writing programs that would create a loop between languages if each output was actually compiled and ran.
 
