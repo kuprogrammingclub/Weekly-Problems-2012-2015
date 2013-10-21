@@ -2,7 +2,7 @@ package com.xnux.sandbox
 object Quine {
   val q = 34
   val l = List(
-	"package com.xnux.sandbox",
+    "package com.xnux.sandbox",
     "object Quine",
     "  val q = 34",
     "  val l = List(",
