@@ -12,4 +12,4 @@ if __name__ == '__main__':
             print '{0}^{1}={2}'.format(int(base), power, perfect_num)
             break
             
-    if found == False: print 'none found'
+    if found == False: print '{0}^1={0}'.format(perfect_num)
