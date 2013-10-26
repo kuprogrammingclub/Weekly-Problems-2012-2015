@@ -1,0 +1,3 @@
+Your English teacher has just asked you to write a paper analyzing a classic work of literature. Since you are an amazing programmer, you decide to put your skills to use. You plan to create a computer-generated report of the vocabulary used in your favorite literary classic.
+
+Your objective is to write a program that will take a text file as input and return a report listing alphabetically all the words in the file and the number of occurrences of each. An example text (Lewis Carroll's Through the Looking-Glass) can be found here.
