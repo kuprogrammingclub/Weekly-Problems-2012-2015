@@ -2,7 +2,7 @@
   (:require [clojure.string :refer [lower-case]]))
 
 (defn analyze
-  "Return a seq of the words in the text. Pretty dumb regex to start."
+  "Return a seq of the words in a text. Pretty dumb regex to start."
   [text]
   (->> text
        (re-seq #"\w((\-|')?[\w]+)*")
