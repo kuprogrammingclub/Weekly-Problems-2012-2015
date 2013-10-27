@@ -1,18 +1,11 @@
 (ns pflor.core
-  (:require [pflor.word-count :refer [analyze counts]]))
+  (:require [pflor.word-count :refer [count-text]]))
 
 (defn get-text
   "Gets the contents of a file (relative to project root) into a string.
    TODO: make this not hold on to the whole file in memory :)"
   [filepath]
   (slurp filepath))
-
-(defn count-text
-  "Returns a sorted frequency ArraySeq of words in the text (a single string)"
-  [text]
-  (-> text
-      analyze
-      counts))
 
 (defn print-counts
   "Prints an ArraySeq of pairs, with evenly-spaced columns"

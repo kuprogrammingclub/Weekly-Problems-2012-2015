@@ -15,3 +15,10 @@
   (-> word-list
       frequencies
       sort))
+
+(defn count-text
+  "Returns a sorted frequency ArraySeq of words in a text (a single string)"
+  [text]
+  (-> text
+      analyze
+      counts))
