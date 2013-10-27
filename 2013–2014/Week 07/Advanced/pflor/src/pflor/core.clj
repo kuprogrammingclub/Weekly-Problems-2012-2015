@@ -21,8 +21,8 @@
     (let [max-word-length (apply max (map (comp count first) aseq))]
       (doseq [[word occurences] aseq]
         (let [space-buffer (apply str (repeat (- max-word-length (count word)) \space))]
-          (println word space-buffer occurences)))))
-  (println "No words could be found."))
+          (println word space-buffer occurences))))
+    (println "No words could be found.")))
 
 (defn -main
   [& args]
