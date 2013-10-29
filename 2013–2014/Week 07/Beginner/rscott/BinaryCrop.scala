@@ -1,5 +1,3 @@
-package com.xnux.sandbox
-
 import scala.collection.immutable.IndexedSeq
 
 object BinaryCrop {
@@ -36,6 +34,15 @@ object BinaryCrop {
 			"00000000000000000000000000000000"
 	)
 	
+	val badMatrix = IndexedSeq(
+			"0000000000",
+			"0000000000",
+			"0000000000",
+			"0000000000",
+			"0000000000",
+			"0000000000"
+	)
+	
 	/** NOTE: This method assumes left-to-right traversal */
 	private def remaxify(c: Char, x: Int, mm: MinMax): MinMax = c match {
 		case '1' => mm match { // If a 1 is found...
@@ -55,16 +62,22 @@ object BinaryCrop {
 	}
 	
 	def main(args: Array[String]) {
-		val (top, left, right, bottom) = (0 to matrix.length - 1).foldLeft(noEdgeCoords)((edgeCoords, y) => { // For each row...
-			val line = matrix(y) // ...get the row...
+		val testMatrix = matrix
+		//val testMatrix = badMatrix
+		val (top, left, right, bottom) = (0 to testMatrix.length - 1).foldLeft(noEdgeCoords)((edgeCoords, y) => { // For each row...
+			val line = testMatrix(y) // ...get the row...
 			val minMaxX = (0 to line.length - 1).foldLeft(noMinMax)((minMax, x) => remaxify(line(x), x, minMax)) // ...find the leftmost and rightmost 1's (if any)...
 			recoordinate(minMaxX, y, edgeCoords) // ...and then adjust the "cropped" edge coordinates (if necessary)
 		})
 		
-		(top to bottom).foreach(y => {
-			(left to right).foreach(x => print(matrix(y)(x)))
-			println
-		})
+		if ((top, left, right, bottom) != noEdgeCoords) {
+			(top to bottom) foreach(y => {
+				(left to right) foreach(x => print(testMatrix(y)(x)))
+				println
+			})
+		} else {
+			println("Your matrix sucks.")
+		}
 	}
 
 }
