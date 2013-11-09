@@ -7,10 +7,6 @@
  * 				Prints out both the string with the letters removed and a string made of the removed letters.
  */
 
-// --- PROBLEMS ---
-// string.trim( ); won't take care of spacing after the second word. It adds them to duplicates because I added the spacing condition for the duplicates
-// if statement. I thought string.trim( ); deletes all leading and trailing whitespace for the ENTIRE string, even if the string is multiple words?
-
 import java.util.Scanner;
 
 public class DuplicateRemoval {
@@ -23,13 +19,14 @@ public class DuplicateRemoval {
 		
 		System.out.print("Please input a String with duplicate letters: ");
 		original = input.nextLine(); //makes the original string whatever the user inputs
-		original.trim(); // deletes any leading/trailing whitespace to avoid indexing issues
+		original = original.trim(); // deletes any leading/trailing whitespace to avoid indexing issues
 		original += ' '; // adds a space at the end of the original string to avoid out of bounds exceptions
 		char[] originalArray = original.toCharArray(); //creates a character array from the original string
 
 		
 		
 		for(int i = 0; i < original.length() - 1; i++) { //beginning from index 0, will increment until the last character of the input
+				
 				if(originalArray[i] == originalArray[i+1] || originalArray[i] == ' ') { //checks to see if two consecutive characters are duplicates
 					duplicates += original.charAt(i); //adds any consecutive duplicate characters to the duplicates string
 				}
@@ -38,8 +35,7 @@ public class DuplicateRemoval {
 					modified += original.charAt(i); //adds all characters whose next consecutive letters aren't duplicates
 				}
 		}
-		
-		
+				
 		System.out.println("The modified string is: " + modified);
 		System.out.println("The duplicate letters removed were: " + duplicates);
 		
