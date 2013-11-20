@@ -33,17 +33,7 @@ E O G O T P N
 H P O L A N D
 ```
 
-Words can be spelled horizontally (forwards or backwards), vertically (ascending or descending order), or diagonally in the grid. For example, the word HOLLAND can be found in the above grid:
-
-```
-F Y Y H N R <b><em>D</b></em>
-R L J C I <b><em>N</b></em> U
-A A W A <b><em>A</b></em> H R
-N T K <b><em>L</b></em> P N E
-C I <b><em>L</b></em> F S A P
-E <b><em>O</b></em> G O T P N
-<b><em>H</b></em> P O L A N D
-```
+Words can be spelled horizontally (forwards or backwards), vertically (ascending or descending order), or diagonally in the grid. For example, the word HOLLAND can be found in the above grid by starting from the bottom-left corner and going diagonally up-right.
 
 Since you are lazy, you decide to write a program to do word searches for you. Your program will need a list of words to find (e.g., ITALY, HOLLAND, POLAND, SPAIN, FRANCE, JAPAN, TOGO, and PERU) and a grid of letters. Given these, the program should output all of the chosen words that it could find, the location of the first letter, and in which direction the word is oriented. For example, with the above grid:
 
