@@ -5,7 +5,7 @@
 # Created: 2 January 2014
 # Last Modified: 3 January 2014
 
-userInput = raw_input('Please enter you phrase to be 1337ified: ') # sets the phrase to be 1337ified as whatever string the user inputs
+userInput = raw_input('Please enter your phrase to be 1337ified: ') # sets the phrase to be 1337ified as whatever string the user inputs
 userInput_upper = userInput.upper() # creates an uppercase string of userInput
 
 l33tDictionary = ['A', '4', 'E', '3', 'I', '!', 'O', '0', 'L', '1', 'T', '7'] # creates a "1337" dictionary for A, E, I, O, L, and T
