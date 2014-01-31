@@ -12,21 +12,26 @@ Fortunately, the city was planned pretty well, resulting in a grid-like structur
 <b>Output description</b>: For each row you want to repair, print "row X repaired", where X is the zero-indexed row value you are to repair. For each column you want to repair, print "column X repaired", where X is the zero-indexed column value you are to repair.
 
 For example,
-
+```
 >> 5
 >> 0 4 0 2 2
 >> 1 4 0 5 3
 >> 2 0 0 0 1
 >> 2 4 0 5 2
 >> 2 0 0 4 0
+```
 
+```
 Row 0 repaired.
 Row 2 repaired.
 Row 4 repaired.
 Column 2 repaired.
+```
 
+```
 x x x x x
 1 4 x 5 3
 x x x x x
 2 4 x 5 2
 x x x x x
+```
