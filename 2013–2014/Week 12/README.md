@@ -30,7 +30,7 @@ quoted ones still break "("     unbalanced
 
 Towards the end of Franz Schubert’s life, he had gone both deaf and blind, so he converted all his sheet music to braille, using braille letters and symbols to stand for each note. Schubert wasn’t a fan of documentation though, so he always omitted the key signatures from his pieces. Despite your modest knowledge of music, the Royal Museum has tasked you with determining the key of each piece of music. Music is normally arrayed on a staff like so:
 
-![What an incredible alt text][staff.png]
+![What an incredible alt text](https://raw.github.com/KU-Competitive-Programming/Weekly-Problems/master/2013%E2%80%932014/Week%2012/staff.png)
 
 Luckily, Ada Lovelace produced a braille reading routine that converts each piece of sheet music to a stream of characters, where E, F, G, A, B, C, D represent the notes.
 
@@ -50,7 +50,9 @@ C# major - F#, C#, G#, D#, A#, E#, B#   Cb major - Bb, Eb, Ab, Db, Gb, Cb, Fb
 ```
 
 For instance, a stream of music that consists entirely of the characters:
+
     qF#eF#qEeDqEeDeC#qBqAeG#eAeC#eEeA
+    
 would be in A major, since it contains F#, C#, and G#.
 
 We know each piece of music to be complete, to contain all notes in its scale, and to be in a major key (Schubert was <em>insanely</em> happy). For example, if by the end of a piece you have encountered a Bb and an Eb but no additional flats, you may assume the key to be Bb major.
