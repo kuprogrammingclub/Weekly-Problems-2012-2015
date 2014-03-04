@@ -4,7 +4,7 @@
 
 import Data.List
 
-vowels = "aeiou"
+vowels = "aeiouAEIOU"
 
 --Standard library version
 dmv1 :: String -> (String, String)
