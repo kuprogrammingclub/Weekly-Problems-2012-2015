@@ -22,7 +22,6 @@ local function main()
 		if c ~= "" or v ~= "" then
 			print("Observe the corpse: "..c.."\nAnd here, it's entrails: "..v)
 		end
-		io.flush()
 	end
 end
 main()
