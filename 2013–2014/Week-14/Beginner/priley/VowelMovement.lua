@@ -19,7 +19,10 @@ local function main()
 		io.flush()
 		input = io.read()
 		local c, v = disemvowel(input)
-		print("Observe the corpse: "..c.."\nAnd here, it's entrails: "..v)
+		if c ~= "" or v ~= "" then
+			print("Observe the corpse: "..c.."\nAnd here, it's entrails: "..v)
+		end
+		io.flush()
 	end
 end
 main()
