@@ -10,6 +10,7 @@ import Control.Monad
 
 main = 
   do
+    putStr "Enter a number for the display: "
     str <- getLine
     mapM_ putStrLn $ strFormatter str
 
@@ -20,7 +21,6 @@ right   = "    |"
 both    = " |  |"
 bothCap = " +  +"
 endCap  = "    +"
-end     = "  "
 
 -- Map/Dictionary to convert a single charactert to a list of strings to display
 nums = Map.fromList [('1', endCap : (copy 5 right) ++ [endCap]), 
@@ -29,10 +29,10 @@ nums = Map.fromList [('1', endCap : (copy 5 right) ++ [endCap]),
                      ('4', [bothCap, both, both, full, right, right, endCap]),
                      ('5', [full, left, left, full, right, right, full]),
                      ('6', [full, left, left, full, both, both, full]),
-                     ('7', [full, right, right, right, right, right, endCap]),
+                     ('7', full : (copy 5 right) ++ [endCap]),
                      ('8', [full, both, both, full, both, both, full]),
                      ('9', [full, both, both, full, right, right, endCap]),
-                     ('0', [full, both, both, both, both, both, full])]
+                     ('0', full: (copy 5 both) ++ [full])]
 
 -- helper function to make a list that contains n copies of the list xs
 copy :: Int -> [a] -> [[a]]
