@@ -1,14 +1,19 @@
-(def raw (ref []))
-
-(defn find-palin [start-left, start-right]
-  (loop [section [], left start-left, right start-right]
-    (if (and (> left 0) (< right (- (count @raw) 1)) (= (@raw left) (@raw right)))
-      (recur (subvec @raw (- left 1) (+ right 1)), (- left 1), (+ right 1))
+(defn find-odd [index word]
+  (loop [section [], left index, right index]
+    (if (and (> left 0) (< right (- (count word) 1)) (= (word (- left 1)) (word (+ right 1))))
+      (recur (subvec word (- left 1) (+ right 2)), (- left 1), (+ right 1))
       section)))
 
-(defn palindrome [word]
-  (dosync
-    (ref-set raw (vec word))
-    (vec (map (fn [start-pos]
-               (concat (find-palin start-pos (+ start-pos 1)) (find-palin start-pos start-pos)))
-              (range 0 (count @raw))))))
+(defn find-even [index word]
+  (if (and (< index (- (count word) 1)) (= (word index) (word (+ index 1))))
+    (loop [section [], left index, right (+ index 1)]
+      (if (and (> left 0) (< right (- (count word) 1)) (= (word (- left 1)) (word (+ right 1))))
+        (recur (subvec word (- left 1) (+ right 2)), (- left 1), (+ right 1))
+        section))
+  []))
+
+(defn palindrome [input]
+  (let [word (vec input)]
+    (clojure.string/join (apply max-key count (map (fn [index]
+                (into (find-even index word) (find-odd index word)))
+              (range 0 (count word)))))))
