@@ -5,4 +5,5 @@
        (fib (dec (dec n))))))
 
 (defn fibSum []
-  (reduce + (filter even? (take-while (partial > 10000000) (map (memoize fib) (iterate inc 1))))))
+  (reduce + (filter even? (take-while (partial > 10000000) 
+                                      (map (memoize fib) (iterate inc 1))))))
