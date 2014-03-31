@@ -9,7 +9,7 @@ object Balancer {
 			false
 		} else {
 			trav match {
-				case Nil => if (unclosed == 0) true else false
+				case Nil => unclosed == 0
 				case '(' +: rest => balanced(unclosed + 1, rest)
 				case ')' +: rest => balanced(unclosed - 1, rest)
 				case _ +: rest => balanced(unclosed, rest)
