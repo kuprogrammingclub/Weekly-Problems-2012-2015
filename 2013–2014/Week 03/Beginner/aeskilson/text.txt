@@ -1,5 +1,0 @@
-Kernel
-Microcontroller
-Register
-Memory
-Operator
