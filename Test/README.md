@@ -1,6 +1,6 @@
 # Test
 
-This is a test directory to allow new users to try out git features. Go ahead and upload something here if you want to get familiar wit the basic commands.
+This is a test directory to allow new users to try out git features. Go ahead and upload something here if you want to get familiar with the basic commands.
 
 Always remember to commit your changes with descriptive messages, e.g.,
 
