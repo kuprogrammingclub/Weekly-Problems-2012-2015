@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-const int lp = 10000;//largest place value;
+const int lp = 50000;//largest place value;
 
 struct IntArray // holds all numbers and largest place value of a given array 
 {
