@@ -25,7 +25,7 @@ Palindrome
 Not a palindrome
 ```
 
-## Beginner 3
+## Advanced
 
 This problem comes from [Project Euler](http://projecteuler.net/), a neat website filled with mathematically-oriented programming challenges. This problem is actually [problem 16](http://projecteuler.net/problem=16) from Project Euler in disguise, so if you're so inclined, you can create a Project Euler account, submit your solution, and earn points! Yeah!
 
