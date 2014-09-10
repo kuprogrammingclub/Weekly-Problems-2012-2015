@@ -17,15 +17,16 @@ public class PowerDigitSum {
 		Scanner input = new Scanner(System.in);
 		
 		// Variable initalization for try/catch
-		int base = 0;
-		int exponent = 0;
+		long base = 0;
+		long exponent = 0;
+
 
 		// Prompts for variable input / assignment
-		try {
+		try {		
 			System.out.print("\nPlease enter a base integer greater than or equal to 0: ");
-			base = input.nextInt();
+			base = input.nextLong();
 			System.out.print("Please enter an integer greater than or equal to 0 for the exponent: ");
-			exponent = input.nextInt();
+			exponent = input.nextLong();
 		}
 		catch(Exception e) {
 			System.out.println("\nIncorrect input type. Exiting.");
@@ -39,14 +40,17 @@ public class PowerDigitSum {
 		}
 
 		// Power function executed as well as integer parsing
-		int result = powerFunction(base, exponent);
-		String tempStr = Integer.toString(result);
+		long result = powerFunction(base, exponent);
+		String tempStr = Long.toString(result);
 		String[] digits_str = tempStr.split("");
-		int sumOfDigits = 0;
+		long sumOfDigits = 0;
 
 		// Calculation of digit sum
 		for(int i = 1; i < digits_str.length; i++) {
-			sumOfDigits = sumOfDigits + Integer.parseInt(digits_str[i]);
+			// ===== ERROR ===== //
+			// Errors at e = 63 because a minus sign (?) tries to get parsed as a long
+			// At e = 64, result becomes 0
+			sumOfDigits = sumOfDigits + Long.parseLong(digits_str[i]);
 		}		
 		
 		// Final output
@@ -54,8 +58,8 @@ public class PowerDigitSum {
 		System.out.println("The sum of the digits is: " + sumOfDigits + "\n");
 	}
 
-	public static int powerFunction(int base, int exponent) {
-		int powerResult = base;
+	public static long powerFunction(long base, long exponent) {
+		long powerResult = base;
 
 		for(int i = 1; i < exponent; i++) {
 			powerResult = powerResult * base;
