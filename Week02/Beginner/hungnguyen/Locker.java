@@ -12,26 +12,17 @@ public class Locker {
 		c = user_input.nextInt();
 		user_input.close();
 		int sum = 3*N;
-		if (a < N/2) {
-			sum += a;
+		sum += a;
+		if (b > a) {
+			sum += N-(b-a);
 		} else {
-			sum += N-a;
+			sum += a-b;
 		}
-		if (Math.abs(b-a) < N/2) {
-			sum += Math.abs(b-a);
+		if (c > b) {
+			sum += c-b;
 		} else {
-			sum += N-Math.abs(b-a);
-		}
-		if (c-b < 0) {
-			sum += b-c;
-		} else {
-			sum += N-(c-b);
+			sum += N-(b-c);
 		}
 		System.out.println(sum);
 	}
 }
-		
-	
-		
-
-	
