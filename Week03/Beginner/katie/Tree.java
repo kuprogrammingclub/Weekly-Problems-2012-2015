@@ -2,15 +2,15 @@ import java.util.Scanner;
 public class Tree {
 	public static void main (String [] args){
 		Scanner input = new Scanner(System.in);
-		System.out.println("n= ");
+		System.out.print("tree width= ");
 		int n = input.nextInt();
 			while (n%2 == 0){
 				System.out.println("Odd number, please.");
 				n = input.nextInt();
 			}
-		System.out.println("l= ");
+		System.out.print("leaf character= ");
 		String leaves = input.next();
-		System.out.println("t= ");
+		System.out.print("trunk character= ");
 		String trunk = input.next();
 		
 		int x = 0;
@@ -24,14 +24,10 @@ public class Tree {
 			}
 			System.out.print('\r');
 			spaces--;
-			
 		}
 		for (int z = 0; z <=((n/2)-1) ; z++){
 			System.out.print(" ");
 		}
 		System.out.println(trunk + trunk + trunk);
-
-		
 	}
-
 }
