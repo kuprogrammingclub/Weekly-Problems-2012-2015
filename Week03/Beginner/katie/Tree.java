@@ -4,15 +4,16 @@ public class Tree {
 		Scanner input = new Scanner(System.in);
 		System.out.print("tree width= ");
 		int n = input.nextInt();
-			while (n < 3){
-				System.out.println("Width must be greater than three.");
-				n = input.nextInt();
-			}		
-			while (n%2 == 0){
-				System.out.println("Odd number, please.");
-				n = input.nextInt();
-			}
-			
+			while (n < 3 || n%2 == 0){
+				if ( n < 3) {
+					System.out.println("Width must be greater than three.");
+					n = input.nextInt();
+				}
+				if (n%2 == 0){
+					System.out.println("Odd number, please.");
+					n = input.nextInt();
+				}
+			}			
 		System.out.print("leaf character= ");
 		String leaves = input.next();
 		System.out.print("trunk character= ");
