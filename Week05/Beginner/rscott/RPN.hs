@@ -21,5 +21,5 @@ op '+' n1 n2 = n1 + n2
 op '-' n1 n2 = n1 - n2
 op '*' n1 n2 = n1 * n2
 op '^' n1 n2 = n1 ^ n2
-op '/' n1 n2 = if n2 /= 0 then n1 / n2
-op '%' n1 n2 = if n2 /= 0 then n1 `mod` n2
+op '/' n1 n2 = n1 `div` n2
+op '%' n1 n2 = n1 `mod` n2
