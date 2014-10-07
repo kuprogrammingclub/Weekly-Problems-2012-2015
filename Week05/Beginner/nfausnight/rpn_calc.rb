@@ -11,7 +11,7 @@ def evaluate(input)
     if numeric?(argument)
       buffer << argument.to_i
     else
-      buffer = [buffer.inject(argument.to_sym)]
+      buffer = [buffer.inject(argument)]
     end
   end
   buffer[0]
