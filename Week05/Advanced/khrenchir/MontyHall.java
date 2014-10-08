@@ -1,3 +1,7 @@
+
+//I'm not super sure if this works/fits the prompt??
+ 
+
 import java.util.Random;
 import java.util.Scanner;
 
@@ -57,20 +61,24 @@ public class MontyHall {
 			} else if(currentDoor == carDoor && !stayed){
 				System.out.println("You won!");
 				wonIfSwitched ++;
-			} else {
+			} else if (currentDoor != carDoor && !stayed ){
+				System.out.println("You won! (a goat, sucker.)");
+				wonIfStayed++;
+				
+			} else {			
 				System.out.println("You won! (a goat, sucker.)");
 				wonIfSwitched++;
 			}
 						
 			tries++;
-			System.out.printf("Won if stayed: %d/%,.0f ", wonIfStayed, tries);
+			System.out.printf("Won if stayed:   %d/%,.0f ", wonIfStayed, tries);
 			System.out.printf("(%,.0f)", (wonIfStayed/tries)*100);
 			System.out.println("%");
 			System.out.printf("Won if switched: %d/%,.0f ", wonIfSwitched, tries);
 			System.out.printf("(%,.0f)", (wonIfSwitched/tries)*100);
 			System.out.println("%");
 			System.out.println("Play again?");
-			//stillPlaying = input.nextBoolean();		
+			
 			if(input.next().equals("yes") || input.next().equals("y") ){
 				stillPlaying = true;
 			} else {
@@ -78,6 +86,7 @@ public class MontyHall {
 			} 
 			
 		} while(stillPlaying);
+		
 		System.out.println("Thanks for playing!");
 	}
 
