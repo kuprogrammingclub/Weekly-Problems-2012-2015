@@ -11,6 +11,7 @@ def evaluate(input)
     if numeric?(argument)
       buffer << argument.to_i
     else
+      # This is stupidily dangerous, don't ever actually do this.
       buffer = [buffer.inject(argument)]
     end
   end
