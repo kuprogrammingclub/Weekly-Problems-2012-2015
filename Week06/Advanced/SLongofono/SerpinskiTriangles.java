@@ -5,7 +5,7 @@ public class SerpinskiTriangles {  //AKA Pascal's triangle mod 2
 	public static void main(String[]args){
 		Scanner input = new Scanner(System.in);
 		System.out.println("Input number of rows: ");
-		int rowsIn = input.nextInt();  //rows of Pascal's triangle are 2^(number of triangle rows)
+		int rowsIn = input.nextInt();
 		int[] temp = new int[3];
 		temp[0] = 1;
 		temp[1] = 2;
@@ -19,7 +19,7 @@ public class SerpinskiTriangles {  //AKA Pascal's triangle mod 2
 			System.out.println("*");
 			System.out.println("* *");
 		}
-		for(int i = 0; i < (rowsIn*2)-2; i++){
+		for(int i = 0; i < (rowsIn*2)-2; i++){      //every 2 rows of Pascal's triangle is one row Serpinski's triangle
 			thisRow = rowPlus(thisRow);
 			for(int j = 0; j<thisRow.length; j++){
 				if(thisRow[j]%2==0){
@@ -35,7 +35,7 @@ public class SerpinskiTriangles {  //AKA Pascal's triangle mod 2
 		
 	}
 	
-	public static int[] rowPlus(int[] lastRow){         
+	public static int[] rowPlus(int[] lastRow){         //increments array size, fills out values per Pascal's triangle
 		int[] thisRow = new int[lastRow.length + 1];
 		thisRow[0] = 1;
 		thisRow[thisRow.length-1] = 1;
