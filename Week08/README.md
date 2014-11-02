@@ -4,7 +4,7 @@
 
 A [Caesar cipher](http://en.wikipedia.org/wiki/Caesar_cipher) is a simple way of encrypting a message. It works by taking each letter in the message and replacing it by a different letter some fixed number of positions up or down the alphabet. This technique dates all the way back to ancient Rome (hence it being named after Julius Caesar).
 
-You are tasked with creating a particular kind of Caesar cipher, namely, the [ROT13](http://en.wikipedia.org/wiki/ROT13) (__rot__ate-by-__13__) cipher. This cipher shifts each letter by the letter 13 places further in the alphabet. You can imagine the mapping as follows, where the top is the original alphabet and the bottom is the new alphabet:
+You are tasked with creating a particular kind of Caesar cipher, namely, the [ROT13](http://en.wikipedia.org/wiki/ROT13) (rotate-by-13) cipher. This cipher shifts each letter by the letter 13 places further in the alphabet. You can imagine the mapping as follows, where the top is the original alphabet and the bottom is the new alphabet:
 
 ```
 abcdefghijklmnopqrstuvwxyz
