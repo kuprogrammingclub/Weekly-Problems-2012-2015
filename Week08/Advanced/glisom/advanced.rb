@@ -1,5 +1,5 @@
 def combinator(k, arr)
-  (k..k).flat_map{|n| arr.to_a.combination(n).map(&:join)}
+  arr.to_a.combination(k).map(&:join)
 end
 
 vars = gets.chomp
