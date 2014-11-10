@@ -1,0 +1,76 @@
+import java.util.Random;
+import java.util.Scanner;
+
+public class CPUBreakIn {
+
+	public static void main(String [] args){
+		Scanner io = new Scanner(System.in);
+		Random d = new Random();
+		int testcase = 0;
+		int[] array;
+		System.out.print("Enter 1 to generate a testcase (any number of values), or \nany other number to enter your own.");
+		testcase = io.nextInt();
+		if(testcase!=1){
+			System.out.println("Enter list size: ");
+			int size = io.nextInt();
+			array = new int[size];
+			for(int i=0; i<array.length; i++){
+				System.out.println("Enter value for index " + i + ":");
+				array[i] = io.nextInt();
+			}
+		}
+		else{
+			System.out.println("Enter list size: ");
+			int size = io.nextInt();
+			array = new int[size];
+			for(int i = 0; i<array.length; i++){
+				array[i] = d.nextInt();
+			}
+		}
+		
+		
+		System.out.println("Sorting...");
+		long timeStart = System.currentTimeMillis();
+		int count = 0;
+		
+		
+		while(!inOrder(array)){
+			for(int i = 0; i<array.length; i++){
+				int randIndex = d.nextInt(array.length-1);		//next int inclusive of argument
+				int temp = array[i];					//swap
+				array[i] = array[randIndex];
+				array[randIndex] = temp;
+			}
+			count++;
+		}
+		
+		long timeEnd = System.currentTimeMillis();
+		double time = (timeEnd-timeStart);
+		time /= 1000;
+		System.out.println("Sorted: ");
+		printSorted(array);
+		System.out.println("Time elapsed: " + time + " seconds.");
+		System.out.println("Iterations: " + count + ".");
+		
+		
+	}
+	
+	public static boolean inOrder(int[] array){
+		boolean inOrder = true;
+		int lastValue = array[array.length-1];
+		for(int i =0; i<array.length-1; i++){
+			if((array[i]>array[i+1])||(array[i]>lastValue)){
+				inOrder = false;
+			}
+		}
+		return inOrder;
+	}
+	
+	public static void printSorted(int[] array){
+		for(int i=0; i<array.length; i++){
+			System.out.print(array[i] + " ");
+		}
+		System.out.println("");
+	}
+	
+}
