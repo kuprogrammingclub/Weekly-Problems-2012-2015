@@ -1,0 +1,75 @@
+import java.util.Scanner;
+import java.lang.Math;
+import java.math.BigInteger;
+
+//4294967295 max val 255's
+public class Advanced {
+	
+	public static BigInteger TWO = new BigInteger("2");
+	public static BigInteger ZERO = new BigInteger("0");
+	
+	
+	public static void main(String[] args){
+		Scanner input = new Scanner(System.in);
+		System.out.println("Enter an integer to generate an IP address: ");
+		BigInteger tester = new BigInteger(input.next());
+		System.out.println("Binary representation: " +toBinary(tester));
+		String output = (ipOctet(toBinary(tester)));
+		System.out.println("IP Address: " + output.substring(0, output.length()-1));
+	}
+	
+	
+	public static String toBinary(BigInteger input){		//to handle the...big integers
+		String result = ""; 
+		BigInteger temp = new BigInteger("0");  //all methods require other bigInts
+		while(input.compareTo(ZERO)==1){        //constants included
+			temp=input.remainder(TWO);
+			result = temp.toString() + result;
+			input = input.divide(TWO);
+		}
+		return result;
+	}
+	
+	public static String ipOctet(String binary){
+		String result = "";
+		String temp = "";
+		int sum = 0;
+		while(binary.length()<32){
+			binary = ("0"+binary);		//add zeros to front to get proper format
+		}
+		int twos = 0;
+		for(int i = 31; i>=0; i--){
+			
+			if(binary.charAt(i)=='1'){
+				if(twos==0){
+					sum += 1;
+					twos++;
+				}
+				else{
+					sum+= (int) Math.pow(2, twos);
+					twos++;
+				}
+				if(i%8==0){                     //reset twos and sum after every set of eight digits
+					twos = 0;
+					temp = result;
+					result = String.valueOf(sum);
+					result = result + "." + temp;
+					sum = 0;
+				}
+			}
+			else{
+				twos++;
+				if(i%8==0){											//reset twos and sum after every set of eight digits
+					twos = 0;
+					temp = result;
+					result = String.valueOf(sum);
+					result = result +"."+ temp;
+					sum = 0;
+				}
+			}
+			
+		}
+		return result;
+	}
+}
+	
