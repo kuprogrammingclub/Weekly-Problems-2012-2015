@@ -2,7 +2,7 @@
 import Data.Tuple
 import Data.List
 
-main = interact convert
+main = interact $ unlines . map convert . lines
 
 convert = intercalate "." . map (show . binToDec) . splitBy 8 . decToBin 32 . read
 
