@@ -2,7 +2,7 @@
 ##Beginner
 Print the numbers from 1 to 1000 without using any loop or conditional statements. Don’t just write the printf() or cout statement 1000 times. Be creative and try to find the most efficient way!
 
-## Advanced
+##Advanced
 To give a holiday theme. Santa is busy delivering presents on Christmas Eve. A strong gust of wind blows away his map. He knows his relative location to the next house but there are new skyscrapers built in the neighborhood since last year. Give Santa instructions on how to get to the next house.
 
 Input:
@@ -21,7 +21,7 @@ Give a list of movements he needs to make to reach the next house.
 
 East, South, South, South, South, East, East, North
 ``````````
-Ouput doesn't have to be on the same line. Can use left, right, up and down instead of cardinal directions.
+Output doesn't have to be on the same line. Can use left, right, up and down instead of cardinal directions.
 
 Bonus:
 1. Make it able to take rectangle maps instead of just a square.
