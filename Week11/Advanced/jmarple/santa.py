@@ -22,6 +22,13 @@ visit = [[0 for i in range(0, size)] for j in range(0, size)]
 solutions = []
 visited_path = []
 
+start = [-1,-1]
+for i in range(0, len(x)):
+	if (x[i].find('S')  == 1):
+		start = [i, x[i].find('S')]
+
+print(start)
+
 def finder(path, visited, loc):
 	npath = deepcopy(path)
 	nvisited = deepcopy(visited)
@@ -40,7 +47,7 @@ def finder(path, visited, loc):
 		if (west(loc)[0] >= 0 and west(loc)[0] < size and visited[west(loc)[0]][west(loc)[1]] == 0 and x[west(loc)[0]][west(loc)[1]] != '#'):
 			finder(npath, nvisited, west(loc))
 
-finder([], visit, [0,1])
+finder([], visit, start)
 
 solution_len = [len(i) for i in solutions]
 
