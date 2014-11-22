@@ -1,0 +1,148 @@
+import java.util.Scanner;
+public class Advanced_11 {
+	public static void main(String[] args){
+		
+		Scanner inout = new Scanner(System.in);
+		System.out.print("Enter neighborhood size: ");
+		int size = inout.nextInt();
+		int[][] position = new int [size][size];
+		int lastRow = 0;
+		int lastColumn = 0;
+		boolean[][] beenThere = new boolean [size][size];
+		boolean[][] isWall = new boolean [size][size];
+		boolean notThere = true;
+		boolean north = false;
+		boolean south = false;
+		boolean east = false;
+		boolean west = false;
+		
+		for(int i = 0; i<size; i++){		//initialize position array
+			for(int j = 0; j<size; j++){
+					position[i][j] =0;
+			}
+		}
+		
+		for(int i = 0; i<size; i++){		//array to note where you have been
+			for(int j = 0; j<size; j++){
+					beenThere[i][j] = false;
+			}
+		}
+		
+		String[] map = new String[size];
+		
+		for(int i = 0; i<size; i++){
+			map[i]=inout.nextLine();
+		}
+		
+		int rowHouse = 0;
+		int columnHouse = 0;
+		
+		for(int i = 0; i<size; i++){
+			for(int j = 0; j<map[i].length(); j++){	//locate destination
+				if(map[i].charAt(j)==49){
+					rowHouse = i;
+					columnHouse = j;
+				}
+				if(map[i].charAt(j)==83){			//locate start position
+					position[i][j] = 1;
+					lastRow = i;					//initialize the last position for marking where
+					lastColumn = j;					//you've been
+				}
+				if(map[i].charAt(j)==35){			//locate and mark walls 
+					isWall[i][j] = true;
+				}
+					
+			}
+		}
+		
+		while(notThere){
+			
+			int row = findRow(position);
+			int col = findCol(position);
+			
+			try{
+				if((!isWall[row-1][col])&&(!beenThere[row-1][col])){		//try moving north
+					position[lastRow][lastColumn]=0;
+					position[row-1][col]=1;		
+					lastRow = row;
+					lastColumn = col;
+					beenThere[row][col]=true;
+					if(((row-1)==rowHouse)&&(col==columnHouse)){
+						notThere = false;
+					}
+					System.out.println("north");
+				}
+			}
+			catch(Exception e){}
+			try{
+				if((!isWall[row+1][col])&&(!beenThere[row+1][col])){		//try moving south
+					position[lastRow][lastColumn]=0;
+					position[row+1][col]=1;		
+					lastRow = row;
+					lastColumn = col;
+					beenThere[row][col]=true;
+					if(((row+1)==rowHouse)&&(col==columnHouse)){
+						notThere = false;
+					}
+					System.out.println("south");
+				}
+			}
+			catch(Exception e){}
+			try{
+				if((!isWall[row][col+1])&&(!beenThere[row][col+1])){		//try moving east
+					position[lastRow][lastColumn]=0;
+					position[row][col+1]=1;		
+					lastRow = row;
+					lastColumn = col;
+					beenThere[row][col]=true;
+					if(((row)==rowHouse)&&((col+1)==columnHouse)){
+						notThere = false;
+					}
+					System.out.println("east");
+				}
+			}
+			catch(Exception e){}
+			try{
+				if((!isWall[row][col-1])&&(!beenThere[row][col-1])){		//try moving west
+					position[lastRow][lastColumn]=0;
+					position[row][col-1]=1;		
+					lastRow = row;
+					lastColumn = col;
+					beenThere[row][col]=true;
+					if(((row)==rowHouse)&&((col-1)==columnHouse)){
+						notThere = false;
+					}
+					System.out.println("west");
+				}
+			}
+			catch(Exception e){}
+		
+		}
+		System.out.println("Found it...");
+		
+	}
+	
+	public static int findCol(int[][]position){
+		int result = 0;
+		for(int i = 0; i<position.length; i++){		//find current position
+			for(int j = 0; j<position[i].length; j++){
+					if(position[i][j] == 1){
+						result = j;
+					}
+			}
+		}
+		return result;
+	}
+	public static int findRow(int[][]position){
+		int result = 0;
+		for(int i = 0; i<position.length; i++){		//find current position
+			for(int j = 0; j<position[i].length; j++){
+					if(position[i][j] == 1){
+						result = i;
+					}
+			}
+		}
+		return result;
+	}
+
+}
