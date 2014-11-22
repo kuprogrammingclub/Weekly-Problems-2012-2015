@@ -1,0 +1,97 @@
+
+public class week11 {
+	
+	
+	public static void main (String[]args)
+	{
+		int a = 1000/1;
+		
+		int b = 1000/10;
+		
+		int c = 1000/100;
+		
+		int d = 1000/1000;
+		
+		
+		
+		Adder(d);
+		Adder(c);
+		multTen(c);
+		Adder(b);
+		multTen(b);
+		multHunds(b);
+		System.out.println(a);
+	
+		
+	}
+	
+	public static void Adder (int a1)
+	{
+		
+		
+		System.out.println(a1);
+		System.out.println(a1+1);
+		System.out.println(a1+2);
+		System.out.println(a1+3);
+		System.out.println(a1+4);
+		System.out.println(a1+5);
+		System.out.println(a1+6);
+		System.out.println(a1+7);
+		System.out.println(a1+8);
+		System.out.println(a1+9);
+	}
+	
+	public static void multTen (int c1)
+	{
+		c1=c1+10;
+		Adder(c1);
+		c1=c1+10;
+		Adder(c1);
+		c1=c1+10;
+		Adder(c1);
+		c1=c1+10;
+		Adder(c1);
+		c1=c1+10;
+		Adder(c1);
+		c1=c1+10;
+		Adder(c1);
+		c1=c1+10;
+		Adder(c1);
+		c1=c1+10;
+		Adder(c1);
+		c1=c1+10;
+		Adder(c1);
+	}
+	
+	public static void multHunds (int d1)
+	{
+		d1=d1+100;
+		Adder(d1);
+		multTen(d1);
+		d1=d1+100;
+		Adder(d1);
+		multTen(d1);
+		d1=d1+100;
+		Adder(d1);
+		multTen(d1);
+		d1=d1+100;
+		Adder(d1);
+		multTen(d1);
+		d1=d1+100;
+		Adder(d1);
+		multTen(d1);
+		d1=d1+100;
+		Adder(d1);
+		multTen(d1);
+		d1=d1+100;
+		Adder(d1);
+		multTen(d1);
+		d1=d1+100;
+		Adder(d1);
+		multTen(d1);
+		d1=d1+100;
+	}
+	
+	
+
+}
