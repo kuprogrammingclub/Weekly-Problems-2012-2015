@@ -1,6 +1,6 @@
 #Week 12
 ##Beginner
-Create a code cypher. When given a string of only letters, switch every letter with the letter 13 spots a head of it. i.e. `a -> n` and `t -> g`. Don't worry about capitalization.
+Create a code cipher. When given a string of only letters, switch every letter with the letter 13 spots ahead of it. i.e. `a -> n` and `t -> g`. Don't worry about capitalization.
 
 Optional: make the function be able to take a number argument that tells you how far to shift.
 
