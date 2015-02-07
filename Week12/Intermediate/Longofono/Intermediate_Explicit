@@ -1,0 +1,11 @@
+//good up to 46th term
+public class weekly1_intermediate {
+	public static void main(String[] args) {
+			System.out.println(fibby(Integer.parseInt(args[0])));
+	}
+	
+	public static int fibby(int n){
+		//cast for rounding error
+		return (int)((Math.pow((0.5)*(1+Math.sqrt(5)),n)-Math.pow((0.5)*(1-Math.sqrt(5)),n))/(((0.5)*(1+Math.sqrt(5)))-((0.5)*(1-Math.sqrt(5)))));
+	}
+}
