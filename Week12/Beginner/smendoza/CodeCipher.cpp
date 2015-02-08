@@ -56,6 +56,11 @@ int main() {
     if(choice == "NO" || toupper(choice[0]) == 'N') {
         cout << "\nEnter the value you want to shift by (not greater than 26): ";
         cin >> shiftVal;
+
+        if(shiftVal < 0) {
+            cout << "Can't shift backwards. Using default shift." << endl;
+            shiftVal = 13;
+        }
         
         if(shiftVal > 26) {
             cout << "Can't shift by a number greater than 26. Using default shift." << endl;
