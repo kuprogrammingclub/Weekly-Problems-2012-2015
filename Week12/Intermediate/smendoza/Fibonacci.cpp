@@ -37,15 +37,15 @@ int main() {
         }
     }
 
-    cout << "\nEnter a number to compute the Fibonacci sequence for: ";
-    long input;
+    cout << "\nEnter the position you wish to compute in the Fibonacci sequence: ";
+    int input;
     cin >> input;
 
     if(input > 134) {
-        cout<< "That's too big of a number!" << endl;
+        cout<< "That's too big of a number!\n" << endl;
     }
     else {
-        cout << "The value at that place in the Fibonacci sequence is " << fibonacci(0, 1, input, 1) << ".\n" << endl;
+        cout << "The value at that position in the Fibonacci sequence is " << fibonacci(0, 1, input, 1) << ".\n" << endl;
     }
 
     return(0);
