@@ -1,24 +1,24 @@
 /*
     Fibonacci.cpp
-    Purpose: Computes the value at the given position in the Fibonacci sequence without using
-             assingment within the Fibonacci calculation.
-    
+   
     @author Stefan Mendoza
     @date 8 February 2015
 */
+
+
+//---------- NEED TO VERIFY THAT OUTPUT IS CORRECT ----------
+// n = 134 is incorrect. Not sure about everything else. Correct up to a certain position.
+
 
 #include <iostream>
 using namespace std;
 
 
-long fibonacci(long prior, long current, int position, int count) {
+long fibonacci(unsigned long long prior, unsigned long long current, int position, int count) {
     if(position == 0) {
         return 0;
     }
-    else if(position == 1) {
-        return 1;
-    }
-    else if(count == position) {
+    else if(position == 1 || count == position) {
         return current;
     }
     else {
@@ -28,24 +28,8 @@ long fibonacci(long prior, long current, int position, int count) {
 
 
 int main() {
-    cout << "\nDemonstration of the algorithm without input (first 20 values):" << endl;
-    for(int i = 1; i < 21; i++) {
-        cout << fibonacci(0, 1, i, 1) << " ";
-
-        if(i == 20) {
-            cout << endl;
-        }
-    }
-
-    cout << "\nEnter the position you wish to compute in the Fibonacci sequence: ";
-    int input;
-    cin >> input;
-
-    if(input > 134) {
-        cout<< "That's too big of a number!\n" << endl;
-    }
-    else {
-        cout << "The value at that position in the Fibonacci sequence is " << fibonacci(0, 1, input, 1) << ".\n" << endl;
+    for(int i = 1; i < 93; i++) {
+        cout << fibonacci(0, 1, i, 1) << endl;
     }
 
     return(0);
