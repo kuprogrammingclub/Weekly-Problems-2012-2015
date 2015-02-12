@@ -1,7 +1,5 @@
 /*
     CodeCipher.cpp
-    Purpose: Computes the value at the given position in the Fibonacci sequence without using
-             assingment within the Fibonacci calculation.
     
     @author Stefan Mendoza
     @date 8 February 2015
