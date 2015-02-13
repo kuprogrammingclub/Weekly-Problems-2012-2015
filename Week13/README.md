@@ -10,6 +10,7 @@ Your task to create a word game in which two opponents battle each other, one wo
 
 ```
 > because cause
+"be" > ""
 Left wins!
 ```
 
@@ -17,6 +18,7 @@ Explanation: `because` and `cause` share one `c`, one `a`, one `u`, one `s`, and
 
 ```
 > hat cat
+"h" = "c"
 Tie!
 ```
 
@@ -26,7 +28,7 @@ This is because the `a` and `t` cancel out from both sides, leaving behind one `
 
 Create a function that takes a string of lowercase characters and outputs the string after any duplicate occurrence of a character has been removed.
 
-Also, make your algorithm as efficient as possible. See if you can achieve better performance that O(*n*^2).
+Also, make your algorithm as efficient as possible. See if you can achieve better performance that O(*n*²).
 
 ### Examples:
 
