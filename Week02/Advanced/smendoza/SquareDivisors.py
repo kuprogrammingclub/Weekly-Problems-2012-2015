@@ -5,6 +5,8 @@ SquareDivisors.py
 @date 14 February 2015
 '''
 
+# Needs to be updated to compute the o2(64,000,000)
+
 value = int(raw_input("> "))
 
 divisors = []
