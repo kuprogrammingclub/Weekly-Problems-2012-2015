@@ -25,8 +25,8 @@ Bonus : Figure out what day is Easter for every year from noe to 2025.
 
 ```
 > 2015
-April 4
-(alternate output) 4/4
+April 5
+(alternate output) 4/5
 
 > 1994
 4/3
