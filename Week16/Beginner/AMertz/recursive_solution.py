@@ -4,17 +4,12 @@ def DNA_Complement(a, b):
 	#	Print values along way
 	print('A: %s B: %s' % (a,b))
 	#	If we have used all values
-	if(len(a) == 0):
-		return b
+	if(len(a) == 0): return b
 	#	Find complement values
-	elif a[0] == 'A':
-		b += 'T'
-	elif a[0] == 'T':
-		b += 'A'
-	elif a[0] == 'G':
-		b += 'C'
-	elif a[0] == 'C':
-		b += 'G'
+	elif a[0] == 'A': b += 'T'
+	elif a[0] == 'T': b += 'A'
+	elif a[0] == 'G': b += 'C'
+	elif a[0] == 'C': b += 'G'
 	#	Pass rest of string onward
 	return DNA_Complement(a[1:],b)
 
