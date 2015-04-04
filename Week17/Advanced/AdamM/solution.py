@@ -4,7 +4,10 @@ import string
 #   String to be compared to
 test_string = 'METHINKS IT IS LIKE A WEASEL'
 string_length = len(test_string)
+#   Set of characters that can be randomly chosen
+#   to replace a character in the string from
 characters = string.ascii_uppercase + string.whitespace
+#   Score stats
 high_score = 0
 high_score_index = 0
 count = 0
@@ -60,6 +63,7 @@ while(high_score != string_length):
     #   Reassign random string
     rando_string = _100_copies[high_score_index]
     count += 1
+    #   End while loop
 
 #   Output count
 print("Count: %s" % count)
