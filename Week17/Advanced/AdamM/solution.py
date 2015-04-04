@@ -49,12 +49,9 @@ while(high_score != string_length):
         if(string_score[a] > high_score):
             high_score = string_score[a]
             high_score_index = a
-
-        #   Exit if perfect
-        if(string_score[a] == string_length):
-            high_score = string_score[a]
-            high_score_index = a
-            break
+            #   Exit if perfect
+            if(high_score == string_length):
+                break
 
     #   Print results
     print("High score: %s" % high_score)
