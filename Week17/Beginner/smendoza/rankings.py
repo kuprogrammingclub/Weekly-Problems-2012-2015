@@ -24,10 +24,10 @@ ordered.reverse()
 
 # Generates the list of ranks
 '''
-The trick here is that append only gets the index of the first occurence of that value
-in the list. So for [3, 3, 3, 3, 3, 5, 1], it will print out rank 2 for the value 3
-until it reaches 5, and once it reaches 1 it will print out rank 7 because the duplicate
-values have been accounted for.
+The trick here is that list.index(value) only gets the index of the first occurence of that
+value in the list. So for [3, 3, 3, 3, 3, 5, 1], rank 2 will be printed out for every occurence
+of 3 because the sorted (descending) list is [5, 3, 3, 3, 3, 3, 1]. Once it reaches 1 it will
+print out rank 7 because the duplicate values have been accounted for.
 '''
 ranks = []
 for i in range(0, len(numbers)):
