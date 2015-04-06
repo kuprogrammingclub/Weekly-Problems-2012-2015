@@ -15,19 +15,17 @@ vals = [x for x in range(upper_bound)]
 #   returns as list
 def find_factors(n):
     factors = []
-    x = n
-    while(x != 0):
+    for x in range(1, n + 1):
         #   is a factor
         if n % x == 0:
             factors.append(x)
             #   is a square
             if x * x == n:
                 factors.append(x)
-        x -= 1
     return factors
 
 #   Takes integer n
-#   Finds the sum of the squares
+#   returns the sum of the squares
 #   of the divisors of n
 def sigma2(n):
     #   Get factors
@@ -37,13 +35,11 @@ def sigma2(n):
 #   Takes in a list of factors
 #   returns True if perfect square exist
 def is_sq(values):
-    p_sq = False
     for a in range(len(values)):
         for b in range(a + 1, len(values)):
-            if values[a] == values[b]:
-                p_sq = True
-                return p_sq
-    return p_sq
+            #   Perfect square exist
+            if values[a] == values[b]: return True
+    return False
 
 #   Function to be used for
 #   multi processing
