@@ -3,8 +3,7 @@
 from multiprocessing import Pool
 
 #   Highest n value
-upper_bound = 100
-vals = [x for x in range(upper_bound)]
+upper_bound = 64000000
 
 #####################
 #   Function defs   #
@@ -28,9 +27,12 @@ def find_factors(n):
 #   returns the sum of the squares
 #   of the divisors of n
 def sigma2(n):
-    #   Get factors
-    factors = find_factors(n)
-    return sum(map(lambda x: x*x, factors))
+    return sum(map(lambda x: x*x, find_factors(n)))
+
+'''
+Not sure this is part of the actual solution
+'''
+#vals = [x for x in range(upper_bound)]
 
 #   Takes in a list of factors
 #   returns True if perfect square exist
@@ -55,11 +57,15 @@ def f(x):
     if(is_sq(f)): s.append(val)
     return sum(s)
 
+'''
+'''
+
 #####################
 #   Actual program  #
 #####################
+'''
 s = []
-for x in range(upper_bound):
+for x in range(1, upper_bound):
     #   Find the value
     val = sigma2(x)
     #   Find factors of val
@@ -69,3 +75,6 @@ for x in range(upper_bound):
     if(is_sq(f)): s.append(val)
 
 print(sum(s))
+'''
+
+print(sigma2(upper_bound))
