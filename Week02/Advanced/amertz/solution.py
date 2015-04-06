@@ -1,11 +1,10 @@
 #   This program would likely be a good
 #   candidate for multiprocessing
-
+from multiprocessing import Pool
 
 #   Highest n value
 upper_bound = 100
-#   List of perfect squares
-s = []
+vals = [x for x in range(upper_bound)]
 
 #####################
 #   Function defs   #
@@ -43,13 +42,14 @@ def is_sq(values):
         for b in range(a + 1, len(values)):
             if values[a] == values[b]:
                 p_sq = True
-                break
+                return p_sq
     return p_sq
 
-#####################
-#   Actual program  #
-#####################
-for x in range(1, upper_bound):
+#   Function to be used for
+#   multi processing
+def f(x):
+    #   List of perfect squares
+    s = []
     #   Find the value
     val = sigma2(x)
     #   Find its factors
@@ -57,6 +57,19 @@ for x in range(1, upper_bound):
     #   If it is a perfect square
     #   add it to list
     if(is_sq(f)): s.append(val)
+    return sum(s)
 
-#   Print the sum
+#####################
+#   Actual program  #
+#####################
+s = []
+for x in range(upper_bound):
+    #   Find the value
+    val = sigma2(x)
+    #   Find factors of val
+    f = find_factors(val)
+    #   If val is a perfect square
+    #   add it to list
+    if(is_sq(f)): s.append(val)
+
 print(sum(s))
