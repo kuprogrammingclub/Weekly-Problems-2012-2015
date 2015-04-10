@@ -6,7 +6,7 @@ test_string = 'METHINKS IT IS LIKE A WEASEL'
 string_length = len(test_string)
 #   Set of characters that can be randomly chosen
 #   to replace a character in the string from
-characters = string.ascii_uppercase + string.whitespace
+characters = string.ascii_uppercase + ' '
 #   Score stats
 high_score = 0
 high_score_index = 0
