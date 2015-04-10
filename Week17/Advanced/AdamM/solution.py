@@ -4,7 +4,10 @@ import string
 #   String to be compared to
 test_string = 'METHINKS IT IS LIKE A WEASEL'
 string_length = len(test_string)
+#   Set of characters that can be randomly chosen
+#   to replace a character in the string from
 characters = string.ascii_uppercase + string.whitespace
+#   Score stats
 high_score = 0
 high_score_index = 0
 count = 0
@@ -22,14 +25,14 @@ rando_string = random_string(characters, string_length)
 while(high_score != string_length):
 
     #   Make 100 copies
-    _100_copies = [rando_string for x in range(0 , 100)]
+    _100_copies = [rando_string for x in range(100)]
 
     #   Initialize an empty score list
-    string_score = [0 for x in range(0, 100)]
+    string_score = [0 for x in range(100)]
 
     #   Replace characters
-    for a in range(0, len(_100_copies)):
-        for b in range(0, string_length):
+    for a in range(len(_100_copies)):
+        for b in range(string_length):
             #   Roll dice
             if(random.randint(1,20) == 1):
                 #   Get a random character
@@ -40,8 +43,8 @@ while(high_score != string_length):
     #    Score each string
     high_score = 0
     high_score_index = 0
-    for a in range(0, len(_100_copies)):
-        for b in range(0, string_length):
+    for a in range(len(_100_copies)):
+        for b in range(string_length):
             if(_100_copies[a][b] == test_string[b]):
                 string_score[a] += 1
 
@@ -49,12 +52,9 @@ while(high_score != string_length):
         if(string_score[a] > high_score):
             high_score = string_score[a]
             high_score_index = a
-
-        #   Exit if perfect
-        if(string_score[a] == string_length):
-            high_score = string_score[a]
-            high_score_index = a
-            break
+            #   Exit if perfect
+            if(high_score == string_length):
+                break
 
     #   Print results
     print("High score: %s" % high_score)
@@ -63,6 +63,7 @@ while(high_score != string_length):
     #   Reassign random string
     rando_string = _100_copies[high_score_index]
     count += 1
+    #   End while loop
 
 #   Output count
 print("Count: %s" % count)
