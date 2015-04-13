@@ -1,5 +1,6 @@
 import random
 import string
+import time
 
 #   String to be compared to
 test_string = 'METHINKS IT IS LIKE A WEASEL'
@@ -21,6 +22,8 @@ def random_string(char, n):
 #   Create a random string
 rando_string = random_string(characters, string_length)
 
+#   Start timer
+start = time.time()
 #   Loop until found
 while(high_score != string_length):
 
@@ -65,5 +68,6 @@ while(high_score != string_length):
     count += 1
     #   End while loop
 
+end = round(time.time() - start, 4)
 #   Output count
-print("Count: %s" % count)
+print("Count: %s time: %s s" % (count, end))
