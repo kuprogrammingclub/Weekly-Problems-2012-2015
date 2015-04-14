@@ -28,10 +28,10 @@ start = time.time()
 while(high_score != string_length):
 
     #   Make 100 copies
-    _100_copies = [rando_string for x in range(100)]
+    _100_copies = [rando_string for x in range(101)]
 
     #   Initialize an empty score list
-    string_score = [0 for x in range(100)]
+    string_score = [0 for x in range(101)]
 
     #   Replace characters
     for a in range(len(_100_copies)):
