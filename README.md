@@ -19,27 +19,27 @@ opportunites. See below:
 
 
 #### Competitions
--   ** KU ACM Intramural Programming Competition **
+-   __KU ACM Intramural Programming Competition__
 
     A yearly competition conducted mid Spring Semester open to all KU students.
     Five hours are given to complete a problem set of 10.
 
--   ** Consortium for Computing Sciences in Colleges: Central Plains ** - http://www.ccsc.org/centralplains/
+-   __Consortium for Computing Sciences in Colleges: Central Plains__ - http://www.ccsc.org/centralplains/
 
     CCSC:CP holds a yearly regional computer science conference that hosts lectures,
     presentations, as well as a programming competition.
 
--   ** Hack the Midwest ** - http://www.hackthemidwest.com/
+-   __Hack the Midwest__ - http://www.hackthemidwest.com/
 
     Hackathon hosted in Kansas City. As part of registration, competitors submit
     an idea for an application they intend to make from scratch within 24 hours.
 
--   ** Code Rush **
+-   __Code Rush__
 
     Sponsored by Perceptive Software, normally early in the fall semester. Details
     will be posted as they are made available.
 
--   ** Major League Hacking (MLH) ** - https://mlh.io/seasons/f2015/events
+-   __Major League Hacking (MLH)__ - https://mlh.io/seasons/f2015/events
 
     The official student hackathon league.
 
