@@ -16,29 +16,29 @@ e.g. /Weekly-Problems/Week 14/Beginner/membername.ext
 -------------
 
 Comp Prog keeps an expanding list of regional competitive and learning
-opportunites. See below:
+opportunities. See below:
 
 
 #### Competitions
 -   __KU ACM Intramural Programming Competition__
 
-    A yearly competition conducted mid Spring Semester open to all KU students.
-    Five hours are given to complete a problem set of 10.
+    A yearly competition conducted mid-spring semester that is open to all KU
+    students. Five hours are given to complete a problem set of 10.
 
 -   __Consortium for Computing Sciences in Colleges: Central Plains__ - http://www.ccsc.org/centralplains/
 
-    CCSC:CP holds a yearly regional computer science conference that hosts lectures,
-    presentations, as well as a programming competition.
+    CCSC:CP holds a yearly, regional computer science conference that includes
+    lectures, presentations, and a programming competition.
 
 -   __Hack the Midwest__ - http://www.hackthemidwest.com/
 
-    Hackathon hosted in Kansas City. As part of registration, competitors submit
+    Hackathon hosted in Kansas City. As part of the registration, competitors submit
     an idea for an application they intend to make from scratch within 24 hours.
 
 -   __Code Rush__
 
-    Sponsored by Perceptive Software, normally early in the fall semester. Details
-    will be posted as they are made available.
+    Sponsored by Lexmark International (formerly Perceptive Software), normally
+    early in the fall semester. Details will be posted as they are made available.
 
 -   __Major League Hacking (MLH)__ - https://mlh.io/seasons/f2015/events
 
@@ -47,7 +47,7 @@ opportunites. See below:
 
 #### Algorithms
 
--   __Sedgwick__ - http://algs4.cs.princeton.edu/home/
+-   __*Algorithms* by Sedgwick and Wayne__ - http://algs4.cs.princeton.edu/home/
 
     Book on data structures and algorithms. Written with Java in mind, but
     conceptually language agnostic.
@@ -103,6 +103,7 @@ opportunites. See below:
 -   __Github Repositories__ - https://help.github.com/categories/repositories/
 -   __Github Setup__ - https://help.github.com/categories/setup/
 -   __Github User Accounts__ - https://help.github.com/categories/user-accounts/
+-   __Using Github__ - https://help.github.com/categories/using-git/
 -   __Hub__ - https://github.com/github/hub
 
     "hub is a command line tool that wraps git in order to extend it with extra
@@ -110,7 +111,6 @@ opportunites. See below:
     as git, so you can type ```$ git <command>``` in the shell and get all the usual
     hub features."
 
--   __Using Github__ - https://help.github.com/categories/using-git/
 
 #### Programming Practice
 
@@ -163,6 +163,7 @@ opportunites. See below:
 -   J.P. Morgan - http://careers.jpmorgan.com/student/jpmorgan/careers/us/programs/summerug
 -   Jane Street - https://www.janestreet.com/join-jane-street/internships/
 -   Khan Academy - https://www.khanacademy.org/careers/interns
+-   Lexmark International - http://www.lexmark.com/en_us/careers/student-opportunities.html
 -   LinkedIn - https://studentcareers.linkedin.com/internships
 -   Medium - https://medium.com/medium-internships
 -   Microsoft - https://careers.microsoft.com/students/internships
