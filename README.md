@@ -144,6 +144,7 @@ opportunities. See below:
 -   Airbnb - https://www.airbnb.com/careers/departments/engineering
 -   Amazon - http://www.amazon.jobs/team-category/university-recruiting
 -   Apple - https://www.apple.com/jobs/us/students.html
+-   Arris - http://arris.com/careers/index.asp
 -   August Smart Lock - http://august.com/jobs.html
 -   Bank of America - http://campus.bankofamerica.com/search-and-apply/internships/
 -   Bloomberg - http://jobs.bloomberg.com/content/internship/
