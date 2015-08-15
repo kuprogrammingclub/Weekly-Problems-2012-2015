@@ -11,6 +11,6 @@ while(True):
             break
 
     if is_palindrome:
-        print("{0} is a palidrome".format(word))
+        print(word, "is a palindrome")
     else:
-        print("{0} is NOT a palidrome".format(word))
+        print(word, "is NOT a palindrome")
