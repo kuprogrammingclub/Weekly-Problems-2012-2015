@@ -5,8 +5,8 @@ while(True):
     word = input("Enter a word: ").lower()
     reverse = word[::-1]
 
-    for a in range(int(len(word)/2)):
-        if word[a] != reverse[a]:
+    for a, b in zip(word, reverse):
+        if a != b:
             is_palindrome = False
             break
 
