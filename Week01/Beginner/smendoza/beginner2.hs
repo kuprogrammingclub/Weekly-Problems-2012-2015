@@ -15,6 +15,6 @@ main = putStrLn "Use GHCi."
 palindrome :: String -> IO ()
 palindrome phrase = do
     if spacesRemoved == T.reverse spacesRemoved
-       then putStrLn $ "\"" ++ phrase ++ "\" is a palindrome!"
-       else putStrLn $ "\"" ++ phrase ++ "\" is not a palindrome."
+       then putStrLn "Palindrome"
+       else putStrLn "Not a palindrome"
     where spacesRemoved = T.toLower $ T.replace " " "" $ T.pack phrase
