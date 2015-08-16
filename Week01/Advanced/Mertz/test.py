@@ -1,6 +1,14 @@
 import unittest
 from adv2 import sum_number
 
+'''
+Navigate into this directory
+run the following command
+
+$ python test.py
+
+this will run the script
+'''
 class TestAdvTwo(unittest.TestCase):
 
     def test_32678(self):
