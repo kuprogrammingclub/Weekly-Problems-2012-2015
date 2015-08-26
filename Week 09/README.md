@@ -1,5 +1,6 @@
-#Week 9
-##Beginner
+# Week 9
+
+### Beginner
 (From <a href="http://www.reddit.com/r/dailyprogrammer/comments/qzil1/3162012_challenge_26_easy/">/r/DailyProgrammer</a>): Given a string, remove consecutive duplicate letters and put them in a separate string. Print out both the string with the letters removed and a string made of the removed letters. For example:
 
 ```
@@ -20,7 +21,7 @@ flaby aples
 bap
 ```
 
-##Advanced
+### Advanced
 (From <a href="http://programmingpraxis.com/2009/05/26/word-search-solver/">Programming Praxis</a>): <a href="https://en.wikipedia.org/wiki/Word_search">Word searches</a> are a type of puzzle game in which a player must find certain words hidden in a grid of letters, such as:
 
 ```

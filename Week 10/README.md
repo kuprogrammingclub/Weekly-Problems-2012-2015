@@ -1,5 +1,6 @@
-#Week 10
-##Beginner
+# Week 10
+
+### Beginner
 (From <a href="http://programmingpraxis.com/2012/10/09/two-word-games/">Programming Praxis</a>):  It’s been a while since we played word games. We have two today:
 
 1. Find all the words in a dictionary that contain exactly five vowels (a, e, i, o and u) in ascending order.
@@ -10,7 +11,7 @@ These games are easy to play using regular expressions, so you should solve them
 
 Your task is to play the two games.
 
-##Advanced
+### Advanced
 (From <a href="http://www.reddit.com/r/dailyprogrammer/comments/1b3ka1/032713_challenge_121_intermediate_path_to/">/r/DailyProgrammer</a>): Clicking on the first link in the main text of a Wikipedia article not in parentheses or italics, and then repeating the process for subsequent articles, usually eventually gets you to the Philosophy article. As of May 26, 2011, 94.52% of all articles in Wikipedia lead eventually to the article Philosophy. The rest lead to an article with no wikilinks or with links to pages that do not exist, or get stuck in loops. <a href="http://www.youtube.com/watch?v=vehDe2lSptU">Here's a Youtube video demonstrating this phenomenon</a>.
 
 Your goal is to write a program that will find the path from a given article to the Philosophy article by following the first link (not in parentheses, italics or tables) in the main text of the given article. Make sure you have caching implemented from the start so you only need to fetch each page once.

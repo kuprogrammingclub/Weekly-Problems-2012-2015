@@ -1,8 +1,9 @@
-#Week 11
-##Beginner
+# Week 11
+
+### Beginner
 (From <a href="http://programmingpraxis.com/2011/08/26/reverse-every-k-nodes-of-a-linked-list/">Programming Praxis</a>): Given a list of elements and a block size k, return the list of elements with every block of k elements reversed, starting from the beginning of the list. For instance, given the list 1, 2, 3, 4, 5, 6 and the block size 2, the result is 2, 1, 4, 3, 6, 5.
 
-##Advanced
+### Advanced
 (From <a href="http://www.reddit.com/r/dailyprogrammer/comments/1g7gyi/061213_challenge_128_intermediate_covering/">r/DailyProgrammer</a>): Matrix city currently has very poor road conditions; full of potholes and are in dire need of repair. The city needs your help figuring out which streets (and avenues) they should repair. Chosen streets are repaired fully, no half measures, and are end-to-end. They're asking you to give them the minimum number of roads to fix such that all the potholes are still patched up. (They're on a very limited budget.)
 
 Fortunately, the city was planned pretty well, resulting in a grid-like structure with its streets!

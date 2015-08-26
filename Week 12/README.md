@@ -1,8 +1,8 @@
-#Week 12
+# Week 12
 
 Both of these challenges come from KU ACM's 2013 <a href="https://github.com/KU-Competitive-Programming/ku-acm-competition-2013/blob/master/problem_set.pdf?raw=true">programming competition</a>.
 
-##Beginner
+### Beginner
 
 <u>Problem 1: <b>(filter web)</b></u>
 
@@ -24,7 +24,7 @@ o()xxx[{::::::::::::>           balanced
 quoted ones still break "("     unbalanced
 ```
 
-##Advanced
+### Advanced
 
 <u>Problem 6: <b>(Der Braillekönig)</b></u>
 
@@ -52,7 +52,7 @@ C# major - F#, C#, G#, D#, A#, E#, B#   Cb major - Bb, Eb, Ab, Db, Gb, Cb, Fb
 For instance, a stream of music that consists entirely of the characters:
 
     qF#eF#qEeDqEeDeC#qBqAeG#eAeC#eEeA
-    
+
 would be in A major, since it contains F#, C#, and G#.
 
 We know each piece of music to be complete, to contain all notes in its scale, and to be in a major key (Schubert was <em>insanely</em> happy). For example, if by the end of a piece you have encountered a Bb and an Eb but no additional flats, you may assume the key to be Bb major.
