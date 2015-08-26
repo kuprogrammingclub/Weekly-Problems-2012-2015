@@ -1,13 +1,12 @@
-# KU Competitive Programming
+# KU Programming Club
 
 
 ### Weekly-Problems
 -------------------
 
-This repository provides a home for the KU ACM Competitive Programming group's
-weekly problems, as well as problem sets from KU competitions and those held by
-other sponsors. Solutions created by members of KU Competitive Programming
-(Comp Prog) may be submitted under the problems folder,
+This repository provides a home for the KU Programming Group's weekly problems,
+as well as problem sets from KU competitions and those held by other sponsors.
+Solutions created by members may be submitted under the problems folder,
 e.g. /Weekly-Problems/Week 14/Beginner/membername.ext
 
 
@@ -15,8 +14,8 @@ e.g. /Weekly-Problems/Week 14/Beginner/membername.ext
 ### Resources
 -------------
 
-Comp Prog keeps an expanding list of regional competitive and learning
-opportunities. See below:
+We keeps an expanding list of regional competitions and learning opportunities.
+See below:
 
 
 #### Competitions
