@@ -1,5 +1,6 @@
-#Week 4
-##Beginner
+# Week 4
+
+### Beginner
 (From <a href="http://www.reddit.com/r/dailyprogrammer/comments/106go0/9202012_challenge_100_easy_sleep_cycle_estimator/">/r/dailyprogrammer</a>) The human body goes through 90 minute sleep cycles during the night, and you feel more refreshed if you wake up at the end of a sleep cycle than if you wake up during a sleep cycle. The challenge is to make a program that takes a wake-up time and outputs the possible times to fall asleep so that you will wake up at the end of a sleep cycle.
 
 Example:
@@ -12,7 +13,7 @@ Bonus 1: Be able to input a sleep time and output potential wake-up times
 
 Bonus 2: Account for how long it takes to fall asleep
 
-##Advanced
+### Advanced
 (From <a href="http://www.reddit.com/r/dailyprogrammer/comments/106gse/9202012_challenge_100_intermediate_bad_word_filter/">/r/dailyprogrammer</a>) Write a program called 'censor' that takes in one argument on the command line. This argument is the filename of a newline-separated wordlist of profanity such as
 
 <a>http://urbanoalvarez.es/blog/2008/04/04/bad-words-list/</a> or
