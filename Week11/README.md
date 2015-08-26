@@ -1,8 +1,9 @@
-#Week 11
-##Beginner
+# Week 11
+
+## Beginner
 Print the numbers from 1 to 1000 without using any loop or conditional statements. Don’t just write the printf() or cout statement 1000 times. Be creative and try to find the most efficient way!
 
-##Advanced
+## Advanced
 To give a holiday theme. Santa is busy delivering presents on Christmas Eve. A strong gust of wind blows away his map. He knows his relative location to the next house but there are new skyscrapers built in the neighborhood since last year. Give Santa instructions on how to get to the next house.
 
 Input:

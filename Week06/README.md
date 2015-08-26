@@ -1,6 +1,6 @@
-# Week 5
+# Week 6
 
-## Beginner 
+## Beginner
 
 Everyone knows that you can add (that is, concatenate) two lists together, but what about subtracting two lists? Let's implement a list subtraction program. The program should take two list arguments and remove all values from the first list that are present in the second list. For example,
 
@@ -25,33 +25,33 @@ Create a program which generates a Sierpinski triangle with a certain nested tri
 * *
 > 2
    *  
-  * * 
+  * *
  *   *
 * * * *
 > 3
-       *      
-      * *     
-     *   *    
-    * * * *   
+       *
+      * *
+     *   *
+    * * * *
    *       *  
-  * *     * * 
+  * *     * *
  *   *   *   *
 * * * * * * * *
 > 4
-               *              
-              * *             
-             *   *            
-            * * * *           
-           *       *          
-          * *     * *         
-         *   *   *   *        
-        * * * * * * * *       
-       *               *      
-      * *             * *     
-     *   *           *   *    
-    * * * *         * * * *   
+               *
+              * *
+             *   *
+            * * * *
+           *       *
+          * *     * *
+         *   *   *   *
+        * * * * * * * *
+       *               *
+      * *             * *
+     *   *           *   *
+    * * * *         * * * *
    *       *       *       *  
-  * *     * *     * *     * * 
+  * *     * *     * *     * *
  *   *   *   *   *   *   *   *
 * * * * * * * * * * * * * * * *
 ```
