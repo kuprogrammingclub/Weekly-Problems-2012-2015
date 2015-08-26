@@ -1,6 +1,6 @@
 # Week 17
 
-## Beginner 
+## Beginner
 
 (Credit to [Codewars](http://www.codewars.com))
 
