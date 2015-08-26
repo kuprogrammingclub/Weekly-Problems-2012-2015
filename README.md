@@ -1,5 +1,5 @@
-KU Programming Club
-===================
+KU Programming Club (2013-2014)
+===============================
 
 Week 01
 =======

@@ -30,7 +30,7 @@ quoted ones still break "("     unbalanced
 
 Towards the end of Franz Schubert’s life, he had gone both deaf and blind, so he converted all his sheet music to braille, using braille letters and symbols to stand for each note. Schubert wasn’t a fan of documentation though, so he always omitted the key signatures from his pieces. Despite your modest knowledge of music, the Royal Museum has tasked you with determining the key of each piece of music. Music is normally arrayed on a staff like so:
 
-![What an incredible alt text](https://raw.github.com/KU-Competitive-Programming/Weekly-Problems/master/2013%E2%80%932014/Week%2012/staff.png)
+![What an incredible alt text](https://raw.githubusercontent.com/KU-Programming-Club/Weekly-Problems/2013-2014/Week%2012/staff.png)
 
 Luckily, Ada Lovelace produced a braille reading routine that converts each piece of sheet music to a stream of characters, where E, F, G, A, B, C, D represent the notes.
 
