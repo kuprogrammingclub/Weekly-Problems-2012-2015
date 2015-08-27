@@ -1,46 +1,50 @@
 -- Author: Stefan Mendoza
--- Date: 16 August 2016
+-- Date: 27 August 2016
 
 -- ===========
 -- PERFORMANCE
 -- ===========
 
--- *Main> main
--- The sum of the digits of 2^15 is 26
--- The sum of the digits of 2^1000 is 1366
--- The sum of the digits of 2^10000 is 13561
--- The sum of the digits of 2^100000 is 135178
--- (2.39 secs, 715,706,336 bytes)
+-- The below involves executing the code using the GHC interpreter (GHCi)
+
+-- *Main> sum $ map digitToInt (show $ 2 ^ 10)
+-- 7
+-- (0.01 secs, 3,101,000 bytes)
+
+-- *Main> sum $ map digitToInt (show $ 2 ^ 100)
+-- 115
+-- (0.01 secs, 3,102,536 bytes)
+
+-- *Main> sum $ map digitToInt (show $ 2 ^ 1000)
+-- 1366
+-- (0.01 secs, 3,096,520 bytes)
+
+-- *Main> sum $ map digitToInt (show $ 2 ^ 10000)
+-- 13561
+-- (0.01 secs, 3,646,152 bytes)
+
+-- *Main> sum $ map digitToInt (show $ 2 ^ 100000)
+-- 135178
+-- (0.02 secs, 10,733,552 bytes)
+
+-- *Main> sum $ map digitToInt (show $ 2 ^ 1000000)
+-- 1351546
+-- (0.28 secs, 81,042,696 bytes)
+
+-- *Main> sum $ map digitToInt (show $ 2 ^ 10000000)
+-- 13546438
+-- (3.52 secs, 783,466,904 bytes)
+
+-- *Main> sum $ map digitToInt (show $ 2 ^ 100000000)
+-- 135481777
+-- (54.80 secs, 7,838,030,592 bytes)
 
 module Main where
 
 import           Data.Char
-import qualified Data.List as L
 
 main :: IO ()
-main = do
-    execute 2 15
-    execute 2 1000
-    execute 2 10000
-    execute 2 100000
+main = putStrLn "Use GHCi"
 
-execute :: Integer -> Integer -> IO ()
-execute base power =
-    putStrLn $
-        "The sum of the digits of " ++ (show base) ++ "^" ++ (show power)
-        ++ " is " ++ (show $ sumDigits (calculate base power base 1) 0)
-
-
-sumDigits :: String -> Int -> Int
-sumDigits numString digitSum = do
-    if not (L.null numString)
-        then do let digit = digitToInt (head numString)
-                sumDigits (tail numString) (digitSum + digit)
-        else digitSum
-
-
-calculate :: Integer -> Integer -> Integer -> Integer -> String
-calculate base power current count = do
-    if count == power
-        then show current
-        else calculate base power (base * current) (count + 1)
+execute :: Int -> IO ()
+execute power = print $ sum $ map digitToInt (show $ 2 ^ power)
