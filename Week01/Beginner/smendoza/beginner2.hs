@@ -1,8 +1,6 @@
 -- Author: Stefan Mendoza
--- Date: 16 August 2016
+-- Date: 27 August 2016
 -- KU Competitive Programming, Week 1, Beginner Problem #2
-
-{-# LANGUAGE OverloadedStrings #-}
 
 module Main where
 
