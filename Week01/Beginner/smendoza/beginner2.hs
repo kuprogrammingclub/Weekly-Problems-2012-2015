@@ -6,15 +6,14 @@
 
 module Main where
 
-import qualified Data.List as L
-import qualified Data.Text as T
+import Data.Char
 
 main :: IO ()
 main = putStrLn "Use GHCi."
 
 palindrome :: String -> IO ()
-palindrome phrase = do
-    if spacesRemoved == T.reverse spacesRemoved
+palindrome phrase =
+    let spacesRemoved = map toLower $ filter (`elem` (['a'..'z'] ++ ['A'..'Z'])) phrase in
+    if spacesRemoved == reverse spacesRemoved
        then putStrLn "Palindrome"
        else putStrLn "Not a palindrome"
-    where spacesRemoved = T.toLower $ T.replace " " "" $ T.pack phrase
