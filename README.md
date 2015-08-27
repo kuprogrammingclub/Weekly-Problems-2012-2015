@@ -157,6 +157,7 @@ See below:
 -   Facebook - https://www.facebook.com/careers/university
 -   Formlabs - http://formlabs.com/company/careers/internships/
 -   Foursquare - https://foursquare.com/jobs/
+-   Garmin - http://www.garmin.com/us/company/careers/students/
 -   Goldman Sachs - http://www.goldmansachs.com/careers/students-and-graduates/index.html
 -   Google - https://www.google.com/about/careers/students/
 -   IBM - https://www-03.ibm.com/employment/us/un_interns_coops.shtml
