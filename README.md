@@ -186,4 +186,4 @@ See below:
 -   Wells Fargo - https://www.wellsfargo.com/about/careers/mbas-and-undergrads/undergrads/
 
 
-##### Know any other resources or internship opportunities you'd like to share? Email us at: stefan.mendoza@ku.edu
+##### Know any other resources or internship opportunities you'd like to share? Email us at: programming-club@ku.edu
