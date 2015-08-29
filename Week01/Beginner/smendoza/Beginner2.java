@@ -22,7 +22,7 @@ public class Beginner2 {
         String reversedPhrase = reverse(cleanedPhrase);
 
         if(cleanedPhrase == "" || reversedPhrase == "")
-            System.out.println("There weren't even any letters?!?!");
+            System.out.println("There weren't even any number or letters?!?!");
         else if(cleanedPhrase.equalsIgnoreCase(reversedPhrase))
             System.out.println("\nPalindrome");
         else
@@ -30,7 +30,7 @@ public class Beginner2 {
     }
 
     public static String clean(String s) {
-        char[] dictionary = new char[52];
+        char[] dictionary = new char[62];
 
         for(int i = 65; i < 91; i++) {
             dictionary[i - 65] = Character.toChars(i)[0];
@@ -40,11 +40,15 @@ public class Beginner2 {
             dictionary[26 + i - 97] = Character.toChars(i)[0];
         }
 
-        String alphabet = new String(dictionary);
+        for(int i = 48; i < 58; i++) {
+            dictionary[52 + i - 48] = Character.toChars(i)[0];
+        }
+
+        String alphabetAndDigits = new String(dictionary);
         String cleansed = "";
 
         for(int i = 0; i < s.length(); i++) {
-            if(alphabet.contains(String.valueOf(s.charAt(i)))) {
+            if(alphabetAndDigits.contains(String.valueOf(s.charAt(i)))) {
                 cleansed += s.charAt(i);
             }
         }
