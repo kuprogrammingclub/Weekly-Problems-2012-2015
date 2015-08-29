@@ -26,7 +26,7 @@ public class Beginner2 {
         else if(cleanedPhrase.equalsIgnoreCase(reversedPhrase))
             System.out.println("\nPalindrome");
         else
-            System.out.println("Not a palindrome");
+            System.out.println("\nNot a palindrome");
     }
 
     public static String clean(String s) {
