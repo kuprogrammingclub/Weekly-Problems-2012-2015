@@ -11,10 +11,17 @@ public class Advanced {
 
         BigInteger base = BigInteger.valueOf(2);
 
-        System.out.print("Enter an exponent (the base will be 2): ");
-        int exponent = input.nextInt();
-        String result = base.pow(exponent).toString();
+        int exponent = 0;
 
+        if(args.length == 0) {
+            System.out.print("Enter an exponent (the base will be 2): ");
+            exponent = input.nextInt();
+        }
+        else {
+            exponent = Integer.parseInt(args[0]);
+        }
+
+        String result = base.pow(exponent).toString();
         int sum = 0;
 
         for(int i = 0; i < result.length(); i++) {
