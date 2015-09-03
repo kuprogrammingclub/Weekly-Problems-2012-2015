@@ -15,7 +15,7 @@ e.g. /Weekly-Problems/Week 14/Beginner/membername.ext
 ### Resources
 -------------
 
-We keeps an expanding list of regional competitions and learning opportunities.
+We keep an expanding list of regional competitions and learning opportunities.
 See below:
 
 
@@ -139,18 +139,20 @@ See below:
     A collection of web-based interactive tutorials for Python.
 
 
-#### Internships
+#### Local Internships
+-   Arris - http://arris.com/careers/index.asp
+-   Cerner - http://www.cerner.com/about_cerner/careers/students/summer_internships/
+-   Garmin - http://www.garmin.com/us/company/careers/students/
 
+#### Other Internships
 -   Airbnb - https://www.airbnb.com/careers/departments/engineering
 -   Amazon - http://www.amazon.jobs/team-category/university-recruiting
 -   Apple - https://www.apple.com/jobs/us/students.html
--   Arris - http://arris.com/careers/index.asp
 -   August Smart Lock - http://august.com/jobs.html
 -   Bank of America - http://campus.bankofamerica.com/search-and-apply/internships/
 -   Bloomberg - http://jobs.bloomberg.com/content/internship/
 -   Box - https://www.box.com/careers/university/
 -   Capital One - https://campus.capitalone.com/content/internships
--   Cerner - http://www.cerner.com/about_cerner/careers/students/summer_internships/
 -   Chase - https://www.careersatchase.com/studentprograms
 -   Citadel - https://www.citadel.com/careers/campus-recruiting/
 -   The D.E. Shaw Group - https://www.deshaw.com/recruit/UnivListing.html
@@ -158,7 +160,6 @@ See below:
 -   Facebook - https://www.facebook.com/careers/university
 -   Formlabs - http://formlabs.com/company/careers/internships/
 -   Foursquare - https://foursquare.com/jobs/
--   Garmin - http://www.garmin.com/us/company/careers/students/
 -   Goldman Sachs - http://www.goldmansachs.com/careers/students-and-graduates/index.html
 -   Google - https://www.google.com/about/careers/students/
 -   IBM - https://www-03.ibm.com/employment/us/un_interns_coops.shtml
