@@ -1,6 +1,6 @@
 # KU Programming Club
 
-### NEXT MEETING: Wednesday, September 2nd @ 7:00pm in LEEP2 G415
+### NEXT MEETING: TBA
 
 ### Weekly-Problems
 -------------------
