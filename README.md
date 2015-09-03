@@ -139,12 +139,12 @@ See below:
     A collection of web-based interactive tutorials for Python.
 
 
-#### Local Internships
+#### Internships (Local)
 -   Arris - http://arris.com/careers/index.asp
 -   Cerner - http://www.cerner.com/about_cerner/careers/students/summer_internships/
 -   Garmin - http://www.garmin.com/us/company/careers/students/
 
-#### Other Internships
+#### Internships
 -   Airbnb - https://www.airbnb.com/careers/departments/engineering
 -   Amazon - http://www.amazon.jobs/team-category/university-recruiting
 -   Apple - https://www.apple.com/jobs/us/students.html
