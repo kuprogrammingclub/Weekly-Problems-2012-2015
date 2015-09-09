@@ -8,7 +8,4 @@ while True:
         if a != b:
             funny = False
             break
-    if funny:
-        print('Funny')
-    else:
-        print('Not Funny')
+    print("Funny" if funny else "Not Funny")
