@@ -6,7 +6,7 @@ __*Source*__: https://www.hackerrank.com/challenges/funny-string
 Suppose you have a string S which has length N and is indexed from 0 to N−1.
 String R is the reverse of the string S. The string S is funny if the condition
 <br><br>
-|S<sub>i</sub> − (S<sub>i</sub> − 1)| = |R<sub>i</sub> − (R<sub>i</sub> − 1)|
+|S<sub>i</sub> − S<sub>i − 1</sub>| = |R<sub>i</sub> − R<sub>i − 1</sub>|
 <br><br>
 is true for every i from 1 to N − 1.
 
