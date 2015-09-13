@@ -32,9 +32,10 @@ int main(int argc, char** argv){
 		}
 	}
 	if(stax.empty()){
-		std::cout<<"The string was balanced"<<std::endl;
-		return 0;
+		std::cout<<"True"<<std::endl;
 	}
-	std::cout<<"The string was unbalanced"<<std::endl;
-	return 1;
+	else{
+		std::cout<<"False"<<std::endl;
+	}
+	return 0;
 }
