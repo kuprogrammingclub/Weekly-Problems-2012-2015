@@ -22,8 +22,9 @@ for i in range(1, len(s)):
     y = abs(alphabet.index(r[i]) - alphabet.index(r[i - 1]))
     if(x != y):
         funny = False
-        print "Not Funny"
         break
 
-if funny == True:
+if funny:
 	print "Funny"
+else:
+	print "Not funny"
