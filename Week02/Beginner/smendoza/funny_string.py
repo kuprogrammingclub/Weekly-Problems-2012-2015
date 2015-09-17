@@ -10,7 +10,7 @@ import string
 alphabet = list(string.ascii_lowercase)
 
 # Remove any trailing whitespace
-s = input().strip()
+s = input("> ").strip().lower()
 
 # Create a string that is the reverse of s
 r = s[::-1]
@@ -25,6 +25,6 @@ for i in range(1, len(s)):
         break
 
 if funny:
-	print "Funny"
+	print("Funny")
 else:
-	print "Not funny"
+	print("Not funny")
