@@ -21,6 +21,6 @@ That is, 617 + 295.
 2 -> 1 -> 9.
 ```
 
-If you haven't taken EECS 268 yet or have just forgotten how to build a linked list,
-here is a good resource: http://cslibrary.stanford.edu/103/LinkedListBasics.pdf
+If you haven't taken EECS 268 yet or have just forgotten how to build a linked list:
+https://en.wikipedia.org/wiki/Linked_list
 <br>
