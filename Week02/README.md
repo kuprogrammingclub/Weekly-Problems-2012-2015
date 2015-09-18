@@ -196,20 +196,29 @@ consisting of only x's and spaces.
 __Output:__<br>
 Output a single number giving the number of contiguous chains.
 
-#### Sample Input
+#### Sample Input 1
 ```
-{}()
-({()})
-{}(
-[]
+2 8
+xxxxxxxx
+x      x
 ```
 
-#### Sample Output
+#### Sample Output 1
 ```
-true
-true
-false
-true
+1
+```
+
+#### Sample Input 2
+```
+3 9
+xxxx xxxx
+    x    
+   xx    
+```
+
+#### Sample Output 2
+```
+3
 ```
 
 <br>
