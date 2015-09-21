@@ -4,7 +4,8 @@
 	
 	Write a method that reads in n coordinate pairs, and then travels to each from the starting
 	position of (0.5,0.5).  Input is validated for x, y on [0.0, 1.0] and n is a positive integer.
-	The next point is always the closest point to the current position.
+	The next point is always the closest point to the current position.  The return should be the
+	total distance traveled while visiting the points.
 
 	Usage: java muchTreats.java <filename.txt>
 
