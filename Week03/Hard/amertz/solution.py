@@ -9,10 +9,23 @@ def generate_moves(moves):
     for n in range(moves):
         yield (random(), random())
 
+def find_distance(start, positions, distance):
+    if len(positions) > 0:
+        index = 0
+        min_dist = magnitude(start, positions[index])
+        for i in range(len(positions)):
+            mag = magnitude(start, positions[i])
+            if mag < min_dist:
+                min_dist = mag
+                index = i
+        distance += min_dist
+        start = positions[index]
+        del positions[index]
+        return find_distance(start, positions, distance)
+    else:
+        return distance
+
 starting_position = (0.5, 0.5)
 moves = input('Enter the number of moves: ')
 positions = [pos for pos in generate_moves(moves)]
-positions.insert(0, starting_position)
-distance = sum([magnitude(positions[i - 1], positions[i]) for i in range(1, len(positions))])
-
-print distance
+print find_distance(starting_position, positions, 0)
