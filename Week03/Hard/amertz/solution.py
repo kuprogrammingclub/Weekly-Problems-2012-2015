@@ -4,7 +4,6 @@ from random import random
 def magnitude(start, final):
     return sqrt(pow((start[0] - final[0]), 2) + pow((start[1] - final[1]), 2))
 
-
 def generate_moves(moves):
     for n in range(moves):
         yield (random(), random())
@@ -29,3 +28,8 @@ starting_position = (0.5, 0.5)
 moves = input('Enter the number of moves: ')
 positions = [pos for pos in generate_moves(moves)]
 print find_distance(starting_position, positions, 0)
+
+test_case = [(0.9, 0.7), (0.7, 0.7), (0.1, 0.1),
+(0.4, 0.1), (0.6, 0.6), (0.8, 0.8)]
+
+assert find_distance(starting_position, test_case, 0) == 1.667103925399036, 'False' 
