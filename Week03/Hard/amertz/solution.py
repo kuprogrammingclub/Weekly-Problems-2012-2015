@@ -30,6 +30,6 @@ positions = [pos for pos in generate_moves(moves)]
 print find_distance(starting_position, positions, 0)
 
 test_case = [(0.9, 0.7), (0.7, 0.7), (0.1, 0.1),
-(0.4, 0.1), (0.6, 0.6), (0.8, 0.8)]
+            (0.4, 0.1), (0.6, 0.6), (0.8, 0.8)]
 
-assert find_distance(starting_position, test_case, 0) == 1.667103925399036, 'False' 
+assert find_distance(starting_position, test_case, 0) == 1.6467103925399036, 'False'
