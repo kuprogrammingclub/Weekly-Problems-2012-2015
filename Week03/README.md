@@ -1,5 +1,60 @@
 # Week 3
 
+## Beginner - Letters in Alphabetical order
+__*Source*__: https://www.reddit.com/r/dailyprogrammer/comments/3h9pde/20150817_challenge_228_easy_letters_in/
+
+A handful of words have their letters in alphabetical order, that is nowhere in the word do you change direction in the word if you were to scan along the English alphabet. An example is the word "almost", which has its letters in alphabetical order.<br>
+Your challenge today is to write a program that can determine if the letters in a word are in alphabetical order.<br>
+As a bonus, see if you can find words spelled in reverse alphabetical order.<br>
+<br>
+#### Input description
+You'll be given one word per line, all in standard English. Examples:
+```
+almost
+cereal
+```
+
+#### Output Description
+Your program should emit the word and if it is in order or not. Examples:
+```
+almost IN ORDER
+cereal NOT IN ORDER
+```
+<br>
+#### Sample Input
+```
+billowy
+biopsy
+chinos
+defaced
+chintz
+sponged
+bijoux
+abhors
+fiddle
+begins
+chimps
+wronged
+```
+
+#### Sample Output
+```
+billowy IN ORDER
+biopsy IN ORDER
+chinos IN ORDER
+defaced NOT IN ORDER
+chintz IN ORDER
+sponged REVERSE ORDER
+bijoux IN ORDER
+abhors IN ORDER
+fiddle NOT IN ORDER
+begins IN ORDER
+chimps IN ORDER
+wronged REVERSE ORDER
+```
+
+<br>
+
 ## Intermediate 1 - Linked List Addition
 __*Source*__: Cracking The Coding Interview (5th Edition)
 
@@ -23,8 +78,8 @@ That is, 617 + 295.
 
 If you haven't taken EECS 268 yet or have just forgotten how to build a linked list:
 https://en.wikipedia.org/wiki/Linked_list
-<br>
 
+<br>
 
 ## Intermediate 2 - Hyperbinary Computation
 __*Source*__: https://www.reddit.com/r/dailyprogrammer/comments/2xx86n/20150302_challenge_204_intermediate_its_like/
@@ -94,6 +149,7 @@ zeroes if you want to.
 1001001
 ```
 
+<br>
 
 ## Hard - Chester, the Greedy Pomeranian
 __*Source*__: https://www.reddit.com/r/dailyprogrammer/comments/3629st/20150515_challenge_214_hard_chester_the_greedy/
