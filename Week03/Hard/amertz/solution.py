@@ -20,7 +20,6 @@ def generate_min_dist(start, positions):
         yield min_dist
         start = positions[index]
         del positions[index]
-        generate_min_dist(start, positions)
 
 starting_position = (0.5, 0.5)
 moves = input('Enter the number of moves: ')
