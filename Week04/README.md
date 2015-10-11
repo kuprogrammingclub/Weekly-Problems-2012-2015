@@ -5,7 +5,8 @@ __Source__: https://www.hackerrank.com/challenges/library-fine/
 
 The Head Librarian at a library wants you to make a program that calculates the
 fine for returning the book after the return date. You are given the actual and
-the expected return dates. Calculate the fine as follows:<br>
+the expected return dates. Calculate the fine as follows:
+
 1. If the book is returned on or before the expected return date, no fine will
 be charged, in other words fine is 0.
 
