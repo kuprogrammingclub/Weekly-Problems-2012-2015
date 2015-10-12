@@ -15,4 +15,4 @@ def what_is_fine(start, end):
 if __name__ == '__main__':
     dates = [datetime.strptime(line.rstrip(), '%d %m %Y') for line in open('input.txt')]
     print dates
-    print what_is_fine(dates[0], dates[1])
+    print what_is_fine(*dates)
