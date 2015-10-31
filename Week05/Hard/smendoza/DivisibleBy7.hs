@@ -1,6 +1,6 @@
 -- DivisibleBy7.hs
 -- Author: Stefan Mendoza
--- Date: 31 August 2015
+-- Date: 31 October 2015
 --
 -- Source: https://www.reddit.com/r/dailyprogrammer/comments/3irzsi/20150828_challenge_229_hard_divisible_by_7/
 
