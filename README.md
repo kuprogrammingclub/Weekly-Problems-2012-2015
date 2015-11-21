@@ -1,6 +1,6 @@
 # KU Programming Club
 
-### NEXT MEETING: Wednesday, November 11th @ 7:00pm in LEEP2 G415
+### NEXT MEETING: Wednesday, December 2nd @ 7:00pm in LEEP2 G415
 
 ### Weekly-Problems
 -------------------
